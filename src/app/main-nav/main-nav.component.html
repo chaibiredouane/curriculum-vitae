@@ -1,0 +1,78 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav bg-bleu color-white" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>
+    </mat-toolbar>
+    <mat-nav-list id="myGroup">
+      <div class="text-center text-white"><img src="../../assets/images/perso/linkedin-photo.jfif" class="rounded-circle" width="150" height="150">
+        <h2>{{"nav.name" | translate}}</h2></div> 
+        <a mat-list-item class="text-uppercase fw-500 text-white hover" data-bs-toggle="collapse" href="#collapseContact" aria-expanded="false">
+          {{"nav.contact"|translate}}
+        </a>
+      <ul  class="collapse fa-ul" id="collapseContact" data-bs-parent="#myGroup">
+        <li><i class="fa-li fa fa-envelope"></i><p> {{"nav.email"| translate}} </p></li>
+        <li><i class="fa-li fa fa-phone"></i><p> {{"nav.phone"| translate}} </p></li>
+        <li><i class="fa-li fa fa-home"></i><p> {{"nav.address"| translate}} {{"nav.city"| translate}} , {{"nav.country"| translate}} </p></li>
+     </ul>
+
+     <a mat-list-item class="text-uppercase fw-500 text-white hover" data-bs-toggle="collapse" href="#collapseTraining" aria-expanded="false">
+      {{"training.title"|translate}}</a>
+     <ul  class="collapse fa-ul" id="collapseTraining" data-bs-parent="#myGroup">
+      <li><i class="fa-li fa fa-check-square"></i><a href="http://www.interopsante.org" target="_blank"> <u> {{"training.t1.title"| translate}} </u>
+        <br> {{"training.t1.date"| translate}} : {{"training.t1.location"| translate}}  </a></li>
+     <li><i class="fa-li fa fa-check-square"></i><a href="https://www.uca.fr/formation/nos-formations/par-ufr-ecoles-et-iut/institut-dinformatique/master/master-info" target="_blank"> <u> {{"training.t2.title"| translate}} </u>
+        <br> {{"training.t2.date"| translate}} : {{"training.t2.location"| translate}}  </a></li>
+     <li><i class="fa-li fa fa-check-square"></i><a href="https://www.uvsq.fr" target="_blank"> <u>  {{"training.t3.title"| translate}} </u>
+        <br> {{"training.t3.date"| translate}} : {{"training.t3.location"| translate}}  </a></li>
+     <li><i class="fa-li fa fa-check-square"></i><a href="https://www.usthb.dz/fr" target="_blank"> <u> {{"training.t4.title"| translate}} </u>
+        <br> {{"training.t4.date"| translate}} : {{"training.t4.location"| translate}}  </a></li>
+    </ul>
+
+ <a mat-list-item class="text-uppercase fw-500 text-white hover" data-bs-toggle="collapse" href="#collapseLanguage" aria-expanded="false">
+  {{"language.title"|translate}}
+</a>
+<ul class="collapse fa-ul" id="collapseLanguage" data-bs-parent="#myGroup">
+  <li class="flag"><i class=""></i><p><img src="../../assets/images/flags/FR.png"> {{"language.l1.name"| translate}}: {{"language.l1.level"| translate}}</p></li>
+  <li class="flag"><i class=""></i><p><img src="../../assets/images/flags/GB.png"> {{"language.l2.name"| translate}}: {{"language.l2.level"| translate}}</p></li>
+  <li class="flag"><i class=""></i><p><img src="../../assets/images/flags/DZ.png"> {{"language.l3.name"| translate}}: {{"language.l3.level"| translate}}</p></li>
+</ul>
+
+<a mat-list-item class="text-uppercase fw-500 text-white hover" data-bs-toggle="collapse" href="#collapseHobby" aria-expanded="false">
+  {{"hobby.title"|translate}}
+</a>
+<ul class="collapse fa-ul" id="collapseHobby" data-bs-parent="#myGroup">
+  <li><i class="fa-li fa fa-plane"></i><p> {{"hobby.hobby1"| translate}} </p></li>
+  <li><i class="fa-li fa fa-spinner fa-spin"></i><p> {{"hobby.hobby2"| translate}} </p></li>
+  <li><i class="fa-li fa fa-futbol-o"></i><p> {{"hobby.hobby3"| translate}} </p></li>
+</ul>
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="bg-bleu color-white">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>{{"nav.title" | translate}}</span>
+      <span class="spacer"></span>
+      
+<div class="btn-group">
+  <div type="button" class="language" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="flag"><img alt="" src={{currentLanguage?.path}}> {{currentLanguage?.name}}</div> </div>
+  <div class="dropdown-menu">
+    <li *ngFor="let l of languages" [ngClass]="{'active': currentLanguage === l}" class="dropdown-item"  (click)="switchLangStatic(l)">
+      <div class="flag"><img alt="" src={{l.path}}> &nbsp; {{l.name}}</div>
+  </div>
+</div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

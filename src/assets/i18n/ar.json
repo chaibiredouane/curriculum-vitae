@@ -1,0 +1,147 @@
+{
+    "nav": {
+        "name": "رضوان الشايبي",
+        "title": "مشروع تكنولوجيا المعلومات والقائد الفني",
+        "contact": "اتصل",
+        "email": "chaibi.redouane@gmail.com",
+        "phone": "+33 617 767 740",
+        "address": "61 طريق دي زوفتجن",
+        "city": "دوديلانج",
+        "country": "لوكسمبورغ"
+    },
+    "training": {
+        "title": "دورة تأهيلية/تعليمية",
+        "t1": {
+            "title": "تدريب HL7",
+            "date": "2014",
+            "location": "Interopsante ، باريس"
+        },
+        "t2": {
+            "title": "درجة الماجستير في ذكاء الأعمال والبرمجيات",
+            "date": "2009 - 2010",
+            "location": "ISIMA, كليرمون فيران ، فرنسا"
+        },
+        "t3": {
+            "title": "درجة الماجستير في البحث الحاسوبي لمفاهيم الأنظمة",
+            "date": "2008 - 2009",
+            "location": "UVSQ, فرساي ، فرنسا"
+        },
+        "t4": {
+            "title": "مهندس تقنية المعلومات",
+            "date": "2003 - 2008",
+            "location": "الجزائر العاصمة,جامعة هواري بومدين للعلوم والتكنولوجي"
+        }
+    },
+    "language": {
+        "title": "اللغات",
+        "l1": {
+            "name": "فرنسي",
+            "level": "ثنائي اللغة"
+        },
+        "l2": {
+            "name": "الفرنسية",
+            "level": "متوسط"
+        },
+        "l3": {
+            "name": "عربي",
+            "level": "اللغة الأم"
+        }
+    },
+    "hobby": {
+        "title": "مركز الاهتمام",
+        "hobby1": "كثير السفر",
+        "hobby2": "سباق القدم",
+        "hobby3": "كرة القدم"
+    },
+    "cv": {
+        "title": "ملف تعريف",
+        "description": "مهندس برمجيات ، مطور أول مكدس كامل لأكثر من 12 عامًا",
+        "exp": {
+            "title": "الخبرة العملية",
+                    "function_0": {
+                        "title": "مشروع تكنولوجيا المعلومات والقائد الفني",
+                        "company": "معهد لوكسمبورغ للصحة",
+                        "logo": "logo_0.png",
+                        "date": "يناير -2020 - الحالي",
+                        "tasks": {
+                            "task_0": "تطوير وتصميم أداة تتبع العينة",
+                            "task_1": "ترحيل تطبيقات الخدمات المصغرة Spring Boot إلى Quarkus",
+                            "task_2": "إدارة البيانات",
+                            "task_3": "تحديد الأطر و / أو المنهجيات المعيارية لزيادة جودة البيانات في أنشطة تطوير البرمجيات وربط جهود إدارة البيانات بالتطورات التكنولوجية",
+                            "task_4": "مشروع تكنولوجيا المعلومات - اختصاص التشغيل البيني",
+                            "task_5": "المشاركة في تنفيذ جزء CI / CD",
+                            "task_6": "استخدام أدوات Atlassian للمهام اليومية وإنتاج المستندات المطلوبة (JIRA ، SMS ، WIKI)",
+                            "task_7": "تنفيذ / تنسيق عمليات النشر لكل بيئة ضمن دورة حياة التطوير",
+                            "task_8": "توفير التدريب والتوجيه على تقنيات هندسة البرمجيات المدعومة",
+                            "task_9": "قم بتحسين التطبيقات الحالية وصيانتها من منظور الأداء وقابلية التوسع والموثوقية",
+                            "task_10": "المشاركة في تنفيذ إجراءات نظام الجودة وعملية التحقق من صحتها"
+                        },
+                        "technicalBackground": {
+                            "name": "مهارات",
+                            "t_0": "Quarkus microservices, Spring Boot, Python, java (11, 13), Groovy, Apache Maven, Windows PowerShell ",
+                            "t_1": "Angular CLI: (v13, v11, v9), Node: (v16, v13, v10), TypeScript (v4, v3) Package Manager: npm (v8, v6), keycloak, Translate",
+                            "t_2": "Sql server (2019, 2016) T-SQL, Oracle (v18, v11) PL/SQL",
+                            "t_3": "Git, Jenkins, openshift, Docker, Argo CD"
+                        }
+                    },
+                    "function_1": {
+                        "title": "مهندس برمجيات - مدير المشروع",
+                        "company": "ADn solutions",
+                        "logo": "logo_1.jfif",
+                        "date": "يوليو - 2017 - ديسمبر - 2019",
+                        "tasks": {
+                            "task_0": "إنشاء عملية اشتراك عبر الإنترنت (رحلة عميل غير ورقية)",
+                            "task_1": "تطوير وتنفيذ أداة مراقبة قاعدة البيانات",
+                            "task_2": "تنفيذ التوقيع الالكتروني",
+                            "task_3": "تنفيذ حل الدفع عبر الإنترنت",
+                            "task_4": "تنفيذ العروض التجارية",
+                            "task_5": "أتمتة التذكيرات على الملفات غير المكتملة / غير المدفوعة"
+                        },
+                        "technicalBackground": {
+                            "t_0": "C#, API RESTful, .NET Framework 4.6, ASP.NET (MVC, Web Forms)",
+                            "t_1": "CLI.NET, MSI , Javascript (jQuery), CSS, HTML, AJAX , Bootstrap, VS, TFS, web service",
+                            "t_2": "Microsoft SQL Server (TSQL), DocuSign, Mercanet (BNP Paribas), IIS"
+                        }
+                    },
+                    "function_2": {
+                        "title": "مهندس برمجيات",
+                        "company": "Medasys",
+                        "logo": "logo_2.png",
+                        "date": "أغسطس 2010 - يوليو 2017",
+                        "tasks": {
+                            "task_0":"تطوير الرسائل الآمنة MSS ، APICRYPT",
+							"task_1":"تطوير تطبيق يقوم بتحديث معلومات المهنيين الصحيين المسجلين في الدليل المشترك للمهنيين الصحيين (RPPS)",
+							"task_2":"تنفيذ نظام الملفات الإلكترونية (ESA) وقاعدة بيانات الأحمال",
+							"task_3":"تكامل Crystal Report في Dx Care",
+							"task_4":"المشاركة في مشروع PASS (برنامج دعم قطاع الصحة)",
+							"task_5":"تطوير / تكييف وثائق ذكاء الويب",
+							"task_6":"المشاركة في المشروع البحثي RAVEL (البحث وتصور المعلومات في ملف المريض الإلكتروني)",
+							"task_7":"تصحيحات / تطورات على أحد منتجات الإدارة الإدارية للمرضى",
+							"task_8":"تطوير واجهات IHE LAB HL7 v2",
+							"task_9":"تطوير واجهات HL7 v3 CDA R2 (بنية المستندات السريرية)"
+                        },
+                        "technicalBackground": {
+                            "t_0": "C#, API RESTful,.NET Framework 3.5,TFS, Oracle, PL/SQL, PL/SQL",
+                            "t_1": "XML (CDA), JSON, MVP, WCF, WPF, WinForms, ASP.Net,LDAP, POP3, SMTP",
+                            "t_2": "Talend, Webi, BO, cURL Webi, BO, Crystal Reports, MSS, APICRYPT"
+                        }
+                    },
+                        "function_3": {
+                            "title": "مهندس بيانات",
+                            "company": "Diadeis",
+                            "logo": "logo_3.png",
+                            "date": "فبراير 2010 - أغسطس 2010",
+                            "tasks": {
+                                "task_0":"دراسة وتنفيذ نظام الفهرسة",
+                                "task_1":"التنقيب عن البيانات الببليوغرافية ، نظام الفهرسة ، محرك البحث",
+                                "task_2":"مواصفات المتطلبات",
+                                "task_3":"تصميم وتنفيذ قاعدة بيانات",
+                                "task_4":"تطوير تحويل وتحميل المستخلص (ETL)"
+                            },
+                            "technicalBackground": {
+                                "t_0": "Java, Eclipse, JDBC, SQL, Balise UML, ETL, PostgreSQL"
+                            }
+                        }
+        }
+    }
+}

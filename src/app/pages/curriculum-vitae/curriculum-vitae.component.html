@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row">
+    <h2 class="mg-b-5 fw-bold"> {{"cv.title" |translate}}</h2>
+    <p class="mg-b-5 p-l-25">{{"cv.description" |translate}}</p>
+  </div>
+  <div class="row">
+    <h2 class="mg-b-5 fw-bold">{{"cv.exp.title" |translate}}</h2>
+  </div>
+  <div *ngFor="let item of [].constructor(4); let i = index"  class="row">
+    <a class="row d-flex" style="padding-top: 10px;" data-bs-toggle="collapse" href="{{getCollapseId(i, true)}}"aria-expanded="false">
+      <a class="col-lg-8 col-md-8 col-sm-8 text-uppercase fw-bold hover d-flex">
+        <img class="responsive" src='{{ "../../../assets/images/logos/logo_"+i+".png" }}'> <h3 class="pd-10">{{"cv.exp.function_"+i+".title"|translate}}</h3>
+      </a>
+      <h3 class="col-lg-4 col-md-4 col-sm-4 hide pd-10"> {{"cv.exp.function_"+i+".date"|translate}} </h3>
+    </a>
+    <div class="collapse mt-25" id="{{getCollapseId(i, false)}}">
+      <ul class="pd-20" style="padding-left: 50px;">
+        <li *ngFor="let task of [].constructor(i=== 0 ? 11 : ( i=== 1 ? 6 : (i === 3 ? 5 : 10))); let j = index">
+          <p> {{getTaskName(i,j) |translate}}</p>
+        </li>
+      </ul>
+      <a class="text-uppercase fw-bold hover">
+        <h3 style="padding-left: 50px;">{{"cv.exp.function_"+i+".technicalBackground.name"|translate}}</h3>
+      </a>
+      <div class="row mt-25">
+        <div class="col-md-6">
+          <ul class="pd-20" style="padding-left: 50px;">
+            <li *ngFor="let t of [].constructor(i== 0 ? 4 : (i=== 3 ? 1 : 3)); let k = index">
+              <p> {{getTechnicalBackground(i, k) |translate}}</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6"><img src= '{{ "../../../assets/images/logos/technicalBackground_"+i+".PNG"}}' class="img-fluid"
+            alt="Responsive image"></div>
+      </div>
+    </div>
+  </div>
+</div>

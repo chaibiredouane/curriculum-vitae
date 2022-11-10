@@ -1,0 +1,147 @@
+{
+    "nav": {
+        "name": "Redouane CHAIBI",
+        "title": "Chef de projet & Responsable technique",
+        "contact": "contact",
+        "email": "chaibi.redouane@gmail.com",
+        "phone": "+33 617 767 740",
+        "address": "61 route de zoufftgen",
+        "city": "Dudelange",
+        "country": "Luxembourg"
+    },
+    "training": {
+        "title": "Formations",
+        "t1": {
+            "title": "Formation au standard HL7 (v2.5, v3) et CDA",
+            "date": "2014",
+            "location": "Interopsante, Paris"
+        },
+        "t2": {
+            "title": "Master 2 Système d’Information et Aide a la Decision",
+            "date": "2009 - 2010",
+            "location": "ISIMA, Clermont-Ferrand, France"
+        },
+        "t3": {
+            "title": "Master 2 Recherche en informatiques des Concepts aux systèmes",
+            "date": "2008 - 2009",
+            "location": "UVSQ, Versailles, France"
+        },
+        "t4": {
+            "title": "Diplôme d’Ingénieur d’Etat en Informatique,",
+            "date": "2003 - 2008",
+            "location": " USTHB, Algiers"
+        }
+    },
+    "language": {
+        "title": "langues",
+        "l1": {
+            "name": "Français",
+            "level": "Bilingue"
+        },
+        "l2": {
+            "name": "Anglais",
+            "level": "Intermédiaire"
+        },
+        "l3": {
+            "name": "Arabe",
+            "level": "Langue maternelle"
+        }
+    },
+    "hobby": {
+        "title": "centre d'intérêts",
+        "hobby1": "Globetrotter",
+        "hobby2": "Course à pied",
+        "hobby3": "Football"
+    },
+    "cv": {
+        "title": "PROFIL",
+        "description": "Lead technique, Développeur senior full stack depuis plus de 12 ans",
+        "exp": {
+            "title": "EXPÉRIENCE PROFESSIONNELLE",
+                    "function_0": {
+                        "title": "Chef de projet & Technical Leader",
+                        "company": "Luxembourg Institute of Health",
+                        "logo": "logo_0.png",
+                        "date": "Janvier -2020 – Actuel",
+                        "tasks": {
+                            "task_0": "Développement et conception d'un outil de traçabilité des échantillons",
+                            "task_1": "Migration des applications de microservices Spring Boot vers Quarkus",
+                            "task_2": "Data Management",
+                            "task_3": "Mettre en œuvre des processus de gestion sémantique des métadonnées",
+                            "task_4": "Chef de projet - Spécialiste de l'interopérabilité",
+                            "task_5": "Participation à la mise en place de la partie CI/CD",
+                            "task_6": "Utilisation des outils Atlassian pour les tâches quotidiennes et production des documents demandés (JIRA, SMS, WIKI)",
+                            "task_7": "Effectuer/coordonner les déploiements dans chaque environnement au cours du cycle de développement",
+                            "task_8": "Assurer la formation et le coaching sur les technologies utilisées",
+                            "task_9": "Améliorer et maintenir les applications actuelles du point de vue des performances, de l'évolutivité et de la fiabilité",
+                            "task_10": "Participer à la mise en place des procédures du système qualité et à son processus de validation"
+                        },
+                        "technicalBackground": {
+                            "name": "Environnement technique",
+                            "t_0": "Quarkus microservices, Spring Boot, Python, java (11, 13), Groovy, Apache Maven, Windows PowerShell ",
+                            "t_1": "Angular CLI: (v13, v11, v9), Node: (v16, v13, v10), TypeScript (v4, v3) Package Manager: npm (v8, v6), keycloak, Translate",
+                            "t_2": "Sql server (2019, 2016) T-SQL, Oracle (v18, v11) PL/SQL",
+                            "t_3": "Git, Jenkins, openshift, Docker, Argo CD"
+                        }
+                    },
+                    "function_1": {
+                        "title": "Ingénieur logiciel – Chef de projet",
+                        "company": "ADn solutions",
+                        "logo": "logo_1.jfif",
+                        "date": "Juillet -2017 – Décembre- 2019",
+                        "tasks": {
+                            "task_0": "Establishment of an online subscription process (paperless customer journey)",
+                            "task_1": "Développement et mise en place d'un outil de monitoring de base de données",
+                            "task_2": "Mise en place de la signature électronique",
+                            "task_3": "Mise en place d'une solution de paiement en ligne",
+                            "task_4": "Mise en place d'un système d'offre commerciale dynamique et adaptable",
+                            "task_5": "Automatisation des relances sur dossiers incomplets / impayés"
+                        },
+                        "technicalBackground": {
+                            "t_0": "C#, API RESTful, .NET Framework 4.6, ASP.NET (MVC, Web Forms)",
+                            "t_1": "CLI.NET, MSI , Javascript (jQuery), CSS, HTML, AJAX , Bootstrap, VS, TFS, web service",
+                            "t_2": "Microsoft SQL Server (TSQL), DocuSign, Mercanet (BNP Paribas), IIS"
+                        }
+                    },
+                    "function_2": {
+                        "title": "Ingénieur logiciel - Chef de projet",
+                        "company": "Medasys",
+                        "logo": "logo_2.png",
+                        "date": "Août-2010 - Juillet-2017",
+                        "tasks": {
+                            "task_0":"Développement de messagerie sécurisée MSS, APICRYPT",
+							"task_1":"Développement d'une application qui met à jour les informations des professionnels de santé inscrits au Répertoire Partagé des Professionnels de Santé (RPPS)",
+							"task_2":"Mise en place d'un système d'archivage électronique (ESA) et d'un délestage de la base de données",
+							"task_3":"Intégration de Crystal Report dans Dx Care",
+							"task_4":"Participation au projet PASS (Programme d'Appui au Secteur Santé)",
+							"task_5":"Développement / adaptation de documents Web Intelligence",
+							"task_6":"Participation au projet de recherche RAVEL (Recherche et Visualisation des informations dans le dossier électronique du patient)",
+							"task_7":"Corrections/évolutions sur un produit de gestion administrative des patients",
+							"task_8":"Développement des interfaces IHE LAB HL7 v2",
+							"task_9":"Développement des interfaces HL7 v3 CDA R2 (Clinical Document Architecture)"
+                        },
+                        "technicalBackground": {
+                            "t_0": "C#, API RESTful,.NET Framework 3.5,TFS, Oracle, PL/SQL, PL/SQL",
+                            "t_1": "XML (CDA), JSON, MVP, WCF, WPF, WinForms, ASP.Net,LDAP, POP3, SMTP",
+                            "t_2": "Talend, Webi, BO, cURL Webi, BO, Crystal Reports, MSS, APICRYPT"
+                        }
+                    },
+                        "function_3": {
+                            "title": "Ingénieur de données",
+                            "company": "Diadeis",
+                            "logo": "logo_3.png",
+                            "date": "Février-2010 - Août-2010",
+                            "tasks": {
+                                "task_0":"Etude et mise en place d'un système d'indexation",
+                                "task_1":"Fouille de données bibliographiques, système d'indexation, moteur de recherche",
+                                "task_2":"Spécification des exigences",
+                                "task_3":"Conception et réalisation d'une base de données",
+                                "task_4":"Développement d'un ETL"
+                            },
+                            "technicalBackground": {
+                                "t_0": "Java, Eclipse, JDBC, SQL, Balise UML, ETL, PostgreSQL"
+                            }
+                        }
+        }
+    }
+}

@@ -1,0 +1,147 @@
+{
+    "nav": {
+        "name": "Redouane CHAIBI",
+        "title": "IT Project & Technical Leader",
+        "contact": "contact",
+        "email": "chaibi.redouane@gmail.com",
+        "phone": "+33 617 767 740",
+        "address": "61 route de zoufftgen",
+        "city": "Dudelange",
+        "country": "Luxembourg"
+    },
+    "training": {
+        "title": "training",
+        "t1": {
+            "title": "HL7 standard training",
+            "date": "2014",
+            "location": "Interopsante, Paris"
+        },
+        "t2": {
+            "title": "Master's degree in Business Intelligence and Software",
+            "date": "2009 - 2010",
+            "location": "ISIMA, Clermont-Ferrand, France"
+        },
+        "t3": {
+            "title": "Master's degree in computer research of Concepts to Systems",
+            "date": "2008 - 2009",
+            "location": "UVSQ, Versailles, France"
+        },
+        "t4": {
+            "title": "IT Engineer",
+            "date": "2003 - 2008",
+            "location": " USTHB, Algiers"
+        }
+    },
+    "language": {
+        "title": "languages",
+        "l1": {
+            "name": "French",
+            "level": "Bilingual"
+        },
+        "l2": {
+            "name": "English",
+            "level": "Intermediate"
+        },
+        "l3": {
+            "name": "Arabic",
+            "level": "Mother tongue"
+        }
+    },
+    "hobby": {
+        "title": "center of interest",
+        "hobby1": "Globetrotter",
+        "hobby2": "Running",
+        "hobby3": "Football"
+    },
+    "cv": {
+        "title": "PROFILE",
+        "description": "Software Engineer, Senior full stack developer for over 12 years",
+        "exp": {
+            "title": "PROFESSIONAL EXPERIENCE",
+                    "function_0": {
+                        "title": "IT Project & Technical Leader",
+                        "company": "Luxembourg Institute of Health",
+                        "logo": "logo_0.png",
+                        "date": "January -2020 – Currently",
+                        "tasks": {
+                            "task_0": "Development and design of a sample traceability tool",
+                            "task_1": "Migration of Spring Boot microservices applications to Quarkus",
+                            "task_2": "Data Management",
+                            "task_3": "Identifying standard frameworks and/or methodologies to increase data quality in software developments activities and linking data governance efforts to technology developments",
+                            "task_4": "IT Project - Interoperability Specialis",
+                            "task_5": "Participation in the implementation of the CI/CD part",
+                            "task_6": "Use of Atlassian tools for daily tasks and production of requested documents (JIRA, SMS, WIKI)",
+                            "task_7": "Perform / coordinate deployments to each environment within the development lifecycle",
+                            "task_8": "Provide training and coaching on supported software engineering technologies",
+                            "task_9": "Enhance and maintain current applications from a standpoint of performance, scalability, and reliability",
+                            "task_10": "Participate in the quality system procedures implementation and its validation process"
+                        },
+                        "technicalBackground": {
+                            "name": "Technical Background",
+                            "t_0": "Quarkus microservices, Spring Boot, Python, java (11, 13), Groovy, Apache Maven, Windows PowerShell ",
+                            "t_1": "Angular CLI: (v13, v11, v9), Node: (v16, v13, v10), TypeScript (v4, v3) Package Manager: npm (v8, v6), keycloak, Translate",
+                            "t_2": "Sql server (2019, 2016) T-SQL, Oracle (v18, v11) PL/SQL",
+                            "t_3": "Git, Jenkins, openshift, Docker, Argo CD"
+                        }
+                    },
+                    "function_1": {
+                        "title": "Software Engineer – Project Manager",
+                        "company": "ADn solutions",
+                        "logo": "logo_1.jfif",
+                        "date": "July -2017 – December- 2019",
+                        "tasks": {
+                            "task_0": "Establishment of an online subscription process (paperless customer journey)",
+                            "task_1": "Development and implementation of a database monitoring tool",
+                            "task_2": "Implementation of the electronic signature",
+                            "task_3": "Implementation of an online payment solution",
+                            "task_4": "Implementation of commercial offers",
+                            "task_5": "Automation of reminders on incomplete / unpaid files"
+                        },
+                        "technicalBackground": {
+                            "t_0": "C#, API RESTful, .NET Framework 4.6, ASP.NET (MVC, Web Forms)",
+                            "t_1": "CLI.NET, MSI , Javascript (jQuery), CSS, HTML, AJAX , Bootstrap, VS, TFS, web service",
+                            "t_2": "Microsoft SQL Server (TSQL), DocuSign, Mercanet (BNP Paribas), IIS"
+                        }
+                    },
+                    "function_2": {
+                        "title": "Software Engineer",
+                        "company": "Medasys",
+                        "logo": "logo_2.png",
+                        "date": "August-2010 - July-2017",
+                        "tasks": {
+                            "task_0":"Development of secure messaging MSS, APICRYPT",
+							"task_1":"Development of an application that updates the information of health professionals registered in the Shared Directory of Health Professionals (RPPS)",
+							"task_2":"Implementation of an electronic filing system (ESA) and database load shedding",
+							"task_3":"Crystal Report integration in Dx Care",
+							"task_4":"Participation in the PASS project (Health Sector Support Program)",
+							"task_5":"Development / adaptation of Web Intelligence documents",
+							"task_6":"Participation in the research project RAVEL (Research and Visualization of information in the electronic patient file)",
+							"task_7":"Corrections / evolutions on a product of administrative management of the patients",
+							"task_8":"Development of IHE LAB HL7 v2 interfaces",
+							"task_9":"Development of HL7 v3 CDA R2 interfaces (Clinical Document Architecture)"
+                        },
+                        "technicalBackground": {
+                            "t_0": "C#, API RESTful,.NET Framework 3.5,TFS, Oracle, PL/SQL, PL/SQL",
+                            "t_1": "XML (CDA), JSON, MVP, WCF, WPF, WinForms, ASP.Net,LDAP, POP3, SMTP",
+                            "t_2": "Talend, Webi, BO, cURL Webi, BO, Crystal Reports, MSS, APICRYPT"
+                        }
+                    },
+                        "function_3": {
+                            "title": "Data Engineer",
+                            "company": "Diadeis",
+                            "logo": "logo_3.png",
+                            "date": "February-2010 - August-2010",
+                            "tasks": {
+                                "task_0":"Study and implementation of an indexing system",
+                                "task_1":"Bibliography data mining, indexing system, search engine",
+                                "task_2":"Requirements specification",
+                                "task_3":"Design and realization of a database",
+                                "task_4":"Development of an ETL"
+                            },
+                            "technicalBackground": {
+                                "t_0": "Java, Eclipse, JDBC, SQL, Balise UML, ETL, PostgreSQL"
+                            }
+                        }
+        }
+    }
+}

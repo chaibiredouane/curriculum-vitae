@@ -1,0 +1,20 @@
+.mg-b-5 {margin-bottom: 5px;}
+.p-l-25{padding-left: 25px;}
+
+
+.pd-20 { padding: 20px;}
+
+.pd-10 { padding: 10px;}
+
+
+ul li::marker {
+    content: '✓';
+    color: green;
+    font-weight: bold;
+  }
+
+  ul li {
+    padding-left: 20px;
+  }
+
+  .mt-25 {margin-top: -25px;}

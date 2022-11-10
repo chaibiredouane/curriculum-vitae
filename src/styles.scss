@@ -1,0 +1,52 @@
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+p, h3 {
+    font-family: "Times New Roman";
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1281px) { /*High Resolution desktops*/
+    p, h3 {
+        font-size: 16px!important;
+    }
+    .responsive{ height: 48px; width: 130px}
+    }
+
+@media screen and (max-width: 1025px) { /*Laptop and desktops*/
+    p, h3 {
+        font-size: 14px!important;
+    }
+    .responsive{ height: 48px; width: 120px}
+    }
+
+@media screen and (min-width:801px) { /*Landscape Tablet and iPads*/
+    p, h3 {
+        font-size: 13px!important;
+    }
+        .responsive{ height: 48px; width: 130px}
+        }
+       
+@media screen and (min-width:600px) { /*Portrait Tablet and iPads*/
+    p, h3 {
+        font-size: 13px!important;
+    }
+   .responsive{ height: 48px; width: 130px}
+            }
+
+@media screen and (max-width: 480px) { /* Mobile device : Phone with Landscape mode */
+    p, h3, span, .language {
+        font-size: 12px!important;
+    }
+.hide {display: none;}
+   .responsive{ height: 48px; width: 70px}
+}          
+  
+   
+@media screen and (max-width: 320px) { /* Mobile devic : Phone with portrait mode */
+    p, h3 {
+        font-size: 12px!important;
+    }
+   .responsive{ height: 48px; width: 70px}
+}
