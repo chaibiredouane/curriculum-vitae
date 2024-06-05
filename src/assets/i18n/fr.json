@@ -64,22 +64,26 @@
                         "logo": "logo_0.png",
                         "date": "Janvier -2020 – Actuel",
                         "tasks": {
-                            "task_0": "Développement et conception d'un outil de traçabilité des échantillons",
-                            "task_1": "Migration des applications de microservices Spring Boot vers Quarkus",
-                            "task_2": "Data Management",
-                            "task_3": "Mettre en œuvre des processus de gestion sémantique des métadonnées",
-                            "task_4": "Chef de projet - Spécialiste de l'interopérabilité",
-                            "task_5": "Participation à la mise en place de la partie CI/CD",
-                            "task_6": "Utilisation des outils Atlassian pour les tâches quotidiennes et production des documents demandés (JIRA, SMS, WIKI)",
-                            "task_7": "Effectuer/coordonner les déploiements dans chaque environnement au cours du cycle de développement",
-                            "task_8": "Assurer la formation et le coaching sur les technologies utilisées",
-                            "task_9": "Améliorer et maintenir les applications actuelles du point de vue des performances, de l'évolutivité et de la fiabilité",
-                            "task_10": "Participer à la mise en place des procédures du système qualité et à son processus de validation"
+                            "task_0": "Conception et développement d'une application mobile multiplateforme à l'aide de Capacitor",
+                            "task_1": "Intégration de plugins Capacitor pour accéder aux fonctions natives de l'appareil telles que l'appareil photo, le GPS et le stockage de fichiers",
+                            "task_2": "Conception et développement d'un backend avec Quarkus java pour intégrer des API RESTful",
+                            "task_3": "Utilisation de frameworks JavaScript modernes tels qu'Angular en conjonction avec Capacitor pour le développement d'applications robustes",
+                            "task_4": "Développement et conception d'un outil de traçabilité des échantillons",
+                            "task_5": "Migration des applications de microservices Spring Boot vers Quarkus",
+                            "task_6": "Data Management",
+                            "task_7": "Mettre en œuvre des processus de gestion sémantique des métadonnées",
+                            "task_8": "Chef de projet - Spécialiste de l'interopérabilité",
+                            "task_9": "Participation à la mise en place de la partie CI/CD",
+                            "task_10": "Utilisation des outils Atlassian pour les tâches quotidiennes et production des documents demandés (JIRA, SMS, WIKI)",
+                            "task_11": "Effectuer/coordonner les déploiements dans chaque environnement au cours du cycle de développement",
+                            "task_12": "Assurer la formation et le coaching sur les technologies utilisées",
+                            "task_13": "Améliorer et maintenir les applications actuelles du point de vue des performances, de l'évolutivité et de la fiabilité",
+                            "task_14": "Participer à la mise en place des procédures du système qualité et à son processus de validation"
                         },
                         "technicalBackground": {
                             "name": "Environnement technique",
                             "t_0": "Quarkus microservices, Spring Boot, Python, java (11, 13), Groovy, Apache Maven, Windows PowerShell ",
-                            "t_1": "Angular CLI: (v13, v11, v9), Node: (v16, v13, v10), TypeScript (v4, v3) Package Manager: npm (v8, v6), keycloak, Translate",
+                            "t_1": "Angular CLI: (v13, v11, v9), Node: (v16, v13, v10), TypeScript (v4, v3) Package Manager: npm (v8, v6), keycloak, Translate, Capacitor",
                             "t_2": "Sql server (2019, 2016) T-SQL, Oracle (v18, v11) PL/SQL",
                             "t_3": "Git, Jenkins, openshift, Docker, Argo CD"
                         }

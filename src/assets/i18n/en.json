@@ -64,22 +64,26 @@
                         "logo": "logo_0.png",
                         "date": "January -2020 – Currently",
                         "tasks": {
-                            "task_0": "Development and design of a sample traceability tool",
-                            "task_1": "Migration of Spring Boot microservices applications to Quarkus",
-                            "task_2": "Data Management",
-                            "task_3": "Identifying standard frameworks and/or methodologies to increase data quality in software developments activities and linking data governance efforts to technology developments",
-                            "task_4": "IT Project - Interoperability Specialis",
-                            "task_5": "Participation in the implementation of the CI/CD part",
-                            "task_6": "Use of Atlassian tools for daily tasks and production of requested documents (JIRA, SMS, WIKI)",
-                            "task_7": "Perform / coordinate deployments to each environment within the development lifecycle",
-                            "task_8": "Provide training and coaching on supported software engineering technologies",
-                            "task_9": "Enhance and maintain current applications from a standpoint of performance, scalability, and reliability",
-                            "task_10": "Participate in the quality system procedures implementation and its validation process"
+                            "task_0": "Designed and developed a cross-platform mobile application using Capacitor",
+                            "task_1": "Integrated Capacitor plugins to access native device features such as camera, GPS, and file storage",
+                            "task_2": "Design and development of a backend with Quarkus java to integrate RESTful APIs",
+                            "task_3": "Utilized modern JavaScript frameworks such as Angular in conjunction with Capacitor for robust application development",
+                            "task_4": "Development and design of a sample traceability tool",
+                            "task_5": "Migration of Spring Boot microservices applications to Quarkus",
+                            "task_6": "Data Management",
+                            "task_7": "Identifying standard frameworks and/or methodologies to increase data quality in software developments activities and linking data governance efforts to technology developments",
+                            "task_8": "IT Project - Interoperability Specialis",
+                            "task_9": "Participation in the implementation of the CI/CD part",
+                            "task_10": "Use of Atlassian tools for daily tasks and production of requested documents (JIRA, SMS, WIKI)",
+                            "task_11": "Perform / coordinate deployments to each environment within the development lifecycle",
+                            "task_12": "Provide training and coaching on supported software engineering technologies",
+                            "task_13": "Enhance and maintain current applications from a standpoint of performance, scalability, and reliability",
+                            "task_14": "Participate in the quality system procedures implementation and its validation process"
                         },
                         "technicalBackground": {
                             "name": "Technical Background",
                             "t_0": "Quarkus microservices, Spring Boot, Python, java (11, 13), Groovy, Apache Maven, Windows PowerShell ",
-                            "t_1": "Angular CLI: (v13, v11, v9), Node: (v16, v13, v10), TypeScript (v4, v3) Package Manager: npm (v8, v6), keycloak, Translate",
+                            "t_1": "Angular CLI: (v13, v11, v9), Node: (v16, v13, v10), TypeScript (v4, v3) Package Manager: npm (v8, v6), keycloak, Translate, capacitor",
                             "t_2": "Sql server (2019, 2016) T-SQL, Oracle (v18, v11) PL/SQL",
                             "t_3": "Git, Jenkins, openshift, Docker, Argo CD"
                         }
