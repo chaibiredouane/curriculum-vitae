@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "title": "Redouane Chaibi · Full Stack Developer & Technical Lead",
+    "description": "Redouane Chaibi: Full Stack Developer, Technical Lead and Angular & Microservices Architect. Angular Micro Frontends, Native Federation, Quarkus, Keycloak and creator of Easy Mat UI."
+  },
+  "content": {
+    "nav": {
+      "about": "About",
+      "skills": "Skills",
+      "microfrontends": "Micro Frontends",
+      "easymat": "Easy Mat UI",
+      "experience": "Experience",
+      "education": "Education",
+      "contact": "Contact",
+      "menu": "Menu",
+      "theme": "Switch theme",
+      "language": "Language",
+      "skip": "Skip to content"
+    },
+    "hero": {
+      "badge": "Technical Lead · Luxembourg Institute of Health",
+      "hello": "Hi, I'm",
+      "role": "Full Stack Developer · Technical Lead · Angular & Microservices Architect",
+      "summary": "Software engineer and senior full stack developer for over 12 years. I design and build scalable web platforms: Angular Micro Frontends on the front, Quarkus microservices secured by Keycloak on the back, delivered through CI/CD on OpenShift.",
+      "ctaProjects": "Discover Easy Mat UI",
+      "ctaContact": "Get in touch",
+      "stats": [
+        { "value": "12+", "label": "Years of experience" },
+        { "value": "4", "label": "Organizations" },
+        { "value": "3", "label": "Languages spoken" }
+      ]
+    },
+    "about": {
+      "kicker": "Profile",
+      "title": "About me",
+      "paragraphs": [
+        "I am a software engineer and technical lead based in Luxembourg. At the Luxembourg Institute of Health I lead the design and delivery of web applications, from sample traceability to data management and interoperability.",
+        "My work covers the whole stack: architecting Angular front ends, building Quarkus REST microservices, modelling SQL Server databases and automating delivery with Docker, Jenkins and OpenShift.",
+        "I care about reusable solutions, code quality and sharing what I know, through coaching colleagues and through my open-source Angular Material library, Easy Mat UI."
+      ],
+      "highlights": [
+        { "title": "Architecture", "text": "Micro Frontends, microservices and multi-tenant platforms." },
+        { "title": "Leadership", "text": "Technical design, code quality, coaching and team collaboration." },
+        { "title": "Open source", "text": "Creator of Easy Mat UI, published on npm." }
+      ]
+    },
+    "skills": {
+      "kicker": "Expertise",
+      "title": "Technical skills",
+      "intro": "A full stack toolset, from the browser to the cluster.",
+      "groups": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database": "Database",
+        "devops": "DevOps & Infrastructure",
+        "architecture": "Architecture & Technical Leadership"
+      },
+      "architectureItems": [
+        "Micro Frontend Architecture",
+        "Microservices Architecture",
+        "Multi-tenant applications",
+        "Role and Permission Management",
+        "Technical architecture and design",
+        "Code quality and reusable solutions",
+        "Team collaboration and technical mentoring"
+      ]
+    },
+    "mfe": {
+      "kicker": "Architecture",
+      "title": "Micro Frontend Architecture",
+      "intro": "I design and implement Angular Micro Frontend platforms: a host shell composes independently built applications at runtime, so each one can evolve and ship on its own while users get a single, seamless product.",
+      "diagram": {
+        "host": "Host shell",
+        "hostText": "Navigation · layout · session",
+        "remotes": ["Remote · Domain A", "Remote · Domain B", "Remote · Domain C"],
+        "shared": "Shared libraries & reusable components",
+        "auth": "Keycloak · centralized authentication & authorization",
+        "pipeline": "CI/CD · selective builds, one pipeline per application",
+        "label": "Architecture overview: a host shell loads independent remote applications that share libraries, Keycloak authentication and CI/CD pipelines"
+      },
+      "pillars": [
+        { "title": "Angular Micro Frontends", "text": "A host application loads remote Angular applications at runtime. Each remote owns its domain, its routes and its release cycle." },
+        { "title": "Native Federation", "text": "Runtime composition built on web standards (ES modules and import maps), independent of the bundler, to share code between host and remotes." },
+        { "title": "Independent deployment", "text": "Each frontend is built, versioned and deployed on its own, so shipping one feature never means redeploying the whole platform." },
+        { "title": "Shared libraries & components", "text": "Common libraries and reusable components keep the UX consistent and prevent duplicated code across applications." },
+        { "title": "Host ↔ remote communication", "text": "Clear contracts between the shell and its remotes keep applications decoupled while they still share the context they need." },
+        { "title": "Centralized authentication", "text": "Single sign-on with Keycloak and consistent role and permission checks across every application, backed by secured Quarkus APIs." },
+        { "title": "Scalable & maintainable", "text": "Clear boundaries between applications, multi-tenant support and reusable building blocks keep large front ends manageable as they grow." },
+        { "title": "CI/CD & selective builds", "text": "Jenkins pipelines build and deploy only the applications that changed, as Docker images on OpenShift." }
+      ]
+    },
+    "easymat": {
+      "kicker": "Flagship open-source project",
+      "title": "Easy Mat UI",
+      "creator": "Created & maintained by Redouane Chaibi",
+      "intro": "A reusable Angular Material component library that turns the screens you rebuild in every project into configuration. Describe a data table once, with its columns, filters, pagination and edit dialog, and Easy Mat UI renders it.",
+      "featuresTitle": "What it does",
+      "features": [
+        "Configurable and reusable Angular Material tables",
+        "Dynamic column configuration",
+        "Hierarchical data and grouping",
+        "Advanced filtering and sorting",
+        "Editable cells and a create / edit / view dialog",
+        "Expandable rows and child tables",
+        "Import and export capabilities",
+        "Responsive layouts",
+        "Dark and light themes",
+        "Reusable configuration-driven components"
+      ],
+      "github": "GitHub repository",
+      "npm": "npm package",
+      "demo": "Live demo",
+      "imageLight": "Easy Mat UI data table in light mode with typed columns, header filters and row actions",
+      "imageDark": "Easy Mat UI data table in dark mode with typed columns, header filters and row actions",
+      "caption": "Screenshot taken from the live demo"
+    },
+    "experience": {
+      "kicker": "Career",
+      "title": "Professional experience",
+      "stack": "Technical background",
+      "current": "Current",
+      "show": "Show details",
+      "hide": "Hide details",
+      "items": [
+        {
+          "title": "IT Project & Technical Leader",
+          "date": "January 2020 – Present",
+          "tasks": [
+            "Development and design of a sample traceability tool",
+            "Migration of Spring Boot microservices applications to Quarkus",
+            "Data Management",
+            "Identifying standard frameworks and/or methodologies to increase data quality in software development activities and linking data governance efforts to technology developments",
+            "IT Project - Interoperability Specialist",
+            "Participation in the implementation of the CI/CD part",
+            "Use of Atlassian tools for daily tasks and production of requested documents (JIRA, SMS, WIKI)",
+            "Perform / coordinate deployments to each environment within the development lifecycle",
+            "Provide training and coaching on supported software engineering technologies",
+            "Enhance and maintain current applications from a standpoint of performance, scalability, and reliability",
+            "Participate in the quality system procedures implementation and its validation process"
+          ]
+        },
+        {
+          "title": "Software Engineer – Project Manager",
+          "date": "July 2017 – December 2019",
+          "tasks": [
+            "Establishment of an online subscription process (paperless customer journey)",
+            "Development and implementation of a database monitoring tool",
+            "Implementation of the electronic signature",
+            "Implementation of an online payment solution",
+            "Implementation of commercial offers",
+            "Automation of reminders on incomplete / unpaid files"
+          ]
+        },
+        {
+          "title": "Software Engineer",
+          "date": "August 2010 – July 2017",
+          "tasks": [
+            "Development of secure messaging MSS, APICRYPT",
+            "Development of an application that updates the information of health professionals registered in the Shared Directory of Health Professionals (RPPS)",
+            "Implementation of an electronic filing system (ESA) and database load shedding",
+            "Crystal Report integration in Dx Care",
+            "Participation in the PASS project (Health Sector Support Program)",
+            "Development / adaptation of Web Intelligence documents",
+            "Participation in the research project RAVEL (Research and Visualization of information in the electronic patient file)",
+            "Corrections / evolutions on a product of administrative management of the patients",
+            "Development of IHE LAB HL7 v2 interfaces",
+            "Development of HL7 v3 CDA R2 interfaces (Clinical Document Architecture)"
+          ]
+        },
+        {
+          "title": "Data Engineer",
+          "date": "February 2010 – August 2010",
+          "tasks": [
+            "Study and implementation of an indexing system",
+            "Bibliography data mining, indexing system, search engine",
+            "Requirements specification",
+            "Design and realization of a database",
+            "Development of an ETL"
+          ]
+        }
+      ]
+    },
+    "education": {
+      "kicker": "Background",
+      "title": "Education & training",
+      "items": [
+        { "title": "HL7 standard training", "date": "2014", "place": "Interopsante, Paris" },
+        { "title": "Master's degree in Business Intelligence and Software", "date": "2009 - 2010", "place": "ISIMA, Clermont-Ferrand, France" },
+        { "title": "Master's degree in computer research of Concepts to Systems", "date": "2008 - 2009", "place": "UVSQ, Versailles, France" },
+        { "title": "IT Engineer", "date": "2003 - 2008", "place": "USTHB, Algiers" }
+      ],
+      "languagesTitle": "Languages",
+      "languages": [
+        { "name": "French", "level": "Bilingual" },
+        { "name": "English", "level": "Intermediate" },
+        { "name": "Arabic", "level": "Mother tongue" }
+      ],
+      "interestsTitle": "Interests",
+      "interests": ["Globetrotter", "Running", "Football"]
+    },
+    "contact": {
+      "kicker": "Contact",
+      "title": "Let's work together",
+      "text": "Interested in Angular architecture, Micro Frontends or Quarkus microservices? I'd be glad to talk.",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "locationValue": "Dudelange, Luxembourg",
+      "rights": "Built with Angular · © Redouane Chaibi",
+      "top": "Back to top"
+    }
+  }
+}

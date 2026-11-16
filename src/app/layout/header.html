@@ -1,0 +1,67 @@
+<header class="header" [class.scrolled]="scrolled()" [class.open]="menuOpen()">
+  <div class="container bar">
+    <a
+      class="brand"
+      routerLink="/cv"
+      fragment="top"
+      (click)="menuOpen.set(false)"
+      [attr.aria-label]="name"
+    >
+      <span class="monogram" aria-hidden="true">RC</span>
+      <span class="brand-name">{{ name }}</span>
+    </a>
+
+    <nav id="main-nav" class="nav" [attr.aria-label]="'content.nav.menu' | translate">
+      @for (id of items; track id) {
+        <a
+          class="link"
+          routerLink="/cv"
+          [fragment]="id"
+          [class.active]="active() === id"
+          [attr.aria-current]="active() === id ? 'location' : null"
+          (click)="menuOpen.set(false)"
+          >{{ 'content.nav.' + id | translate }}</a
+        >
+      }
+    </nav>
+
+    <div class="tools">
+      <div class="langs" role="group" [attr.aria-label]="'content.nav.language' | translate">
+        @for (l of languages; track l.code) {
+          <button
+            type="button"
+            class="lang"
+            [class.on]="lang.current().code === l.code"
+            [attr.lang]="l.code"
+            [attr.aria-pressed]="lang.current().code === l.code"
+            [attr.title]="l.label"
+            (click)="lang.use(l)"
+          >
+            {{ l.code }}
+          </button>
+        }
+      </div>
+
+      <button
+        type="button"
+        class="icon-btn"
+        (click)="theme.toggle()"
+        [attr.aria-label]="'content.nav.theme' | translate"
+        [attr.title]="'content.nav.theme' | translate"
+      >
+        <app-icon [name]="theme.theme() === 'dark' ? 'sun' : 'moon'" />
+      </button>
+
+      <button
+        type="button"
+        class="icon-btn burger"
+        (click)="toggleMenu()"
+        [attr.aria-expanded]="menuOpen()"
+        aria-controls="main-nav"
+        [attr.aria-label]="'content.nav.menu' | translate"
+      >
+        <app-icon [name]="menuOpen() ? 'close' : 'menu'" />
+      </button>
+    </div>
+  </div>
+</header>

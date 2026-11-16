@@ -1,27 +1,41 @@
-# CurriculumVitae
+# Redouane Chaibi · Developer portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+Personal CV and portfolio of Redouane Chaibi, Full Stack Developer, Technical Lead and Angular & Microservices Architect.
 
-## Development server
+**Live:** https://cv-redouane-chaibi.web.app/cv
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Highlights
 
-## Code scaffolding
+- Hero, about, skills, **Micro Frontend architecture**, **Easy Mat UI** (flagship open-source project), experience timeline, education and contact sections.
+- Dark theme by default, light theme, smooth switch, choice saved in `localStorage` (`cv-theme`). All colors come from CSS variables in `src/styles.scss`.
+- English, French and Arabic (RTL) content in `public/i18n/*.json`, language saved in `localStorage` (`cv-lang`).
+- Mobile-first responsive layout, keyboard accessible, `prefers-reduced-motion` respected.
+- Angular 22, standalone components, signals, lazy-loaded page. The only runtime dependency besides Angular is `@ngx-translate`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Structure
 
-## Build
+```
+src/app/
+  core/       theme + language services, typed content model, language-neutral CV data (cv.data.ts)
+  layout/     header with navigation, scroll-spy, theme and language switchers
+  sections/   hero, about, skills, microfrontends, easy-mat-ui, experience, education, contact
+  shared/     icon, section heading, scroll-reveal directive
+  pages/      cv-page (the /cv route)
+public/       i18n JSON, images, favicon
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Texts live in `public/i18n/{en,fr,ar}.json`; names, links and technology badges live in `src/app/core/cv.data.ts`.
 
-## Running unit tests
+## Commands
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm install
+npm start          # dev server on http://localhost:4200
+npm test           # unit tests (Vitest)
+npm run build      # production build in dist/curriculum-vitae/browser
+npm run deploy     # build + firebase deploy --only hosting (project cv-redouane-chaibi)
+```
 
-## Running end-to-end tests
+## Hosting
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Firebase Hosting serves `dist/curriculum-vitae/browser` and rewrites every route to `index.html`, so `/cv` works on direct access and refresh.

@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "title": "Redouane Chaibi · Développeur Full Stack & Lead technique",
+    "description": "Redouane Chaibi : développeur Full Stack, Lead technique et architecte Angular & microservices. Micro Frontends Angular, Native Federation, Quarkus, Keycloak et créateur d'Easy Mat UI."
+  },
+  "content": {
+    "nav": {
+      "about": "À propos",
+      "skills": "Compétences",
+      "microfrontends": "Micro Frontends",
+      "easymat": "Easy Mat UI",
+      "experience": "Expérience",
+      "education": "Formation",
+      "contact": "Contact",
+      "menu": "Menu",
+      "theme": "Changer de thème",
+      "language": "Langue",
+      "skip": "Aller au contenu"
+    },
+    "hero": {
+      "badge": "Lead technique · Luxembourg Institute of Health",
+      "hello": "Bonjour, je suis",
+      "role": "Développeur Full Stack · Lead technique · Architecte Angular & microservices",
+      "summary": "Ingénieur logiciel et développeur senior full stack depuis plus de 12 ans. Je conçois et réalise des plateformes web évolutives : Micro Frontends Angular côté front, microservices Quarkus sécurisés par Keycloak côté back, livrés via CI/CD sur OpenShift.",
+      "ctaProjects": "Découvrir Easy Mat UI",
+      "ctaContact": "Me contacter",
+      "stats": [
+        { "value": "12+", "label": "Années d'expérience" },
+        { "value": "4", "label": "Organisations" },
+        { "value": "3", "label": "Langues parlées" }
+      ]
+    },
+    "about": {
+      "kicker": "Profil",
+      "title": "À propos",
+      "paragraphs": [
+        "Je suis ingénieur logiciel et lead technique, basé au Luxembourg. Au Luxembourg Institute of Health, je pilote la conception et la livraison d'applications web, de la traçabilité des échantillons à la gestion des données et à l'interopérabilité.",
+        "Mon travail couvre toute la pile : architecture de front ends Angular, microservices REST Quarkus, modélisation de bases SQL Server et automatisation de la livraison avec Docker, Jenkins et OpenShift.",
+        "J'attache de l'importance aux solutions réutilisables, à la qualité du code et au partage des connaissances, par le coaching de mes collègues et par ma bibliothèque open source Angular Material, Easy Mat UI."
+      ],
+      "highlights": [
+        { "title": "Architecture", "text": "Micro Frontends, microservices et plateformes multi-tenant." },
+        { "title": "Leadership", "text": "Conception technique, qualité du code, coaching et collaboration d'équipe." },
+        { "title": "Open source", "text": "Créateur d'Easy Mat UI, publié sur npm." }
+      ]
+    },
+    "skills": {
+      "kicker": "Expertise",
+      "title": "Compétences techniques",
+      "intro": "Une boîte à outils full stack, du navigateur au cluster.",
+      "groups": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database": "Base de données",
+        "devops": "DevOps & Infrastructure",
+        "architecture": "Architecture & Leadership technique"
+      },
+      "architectureItems": [
+        "Architecture Micro Frontend",
+        "Architecture microservices",
+        "Applications multi-tenant",
+        "Gestion des rôles et des permissions",
+        "Architecture et conception technique",
+        "Qualité du code et solutions réutilisables",
+        "Collaboration d'équipe et mentorat technique"
+      ]
+    },
+    "mfe": {
+      "kicker": "Architecture",
+      "title": "Architecture Micro Frontend",
+      "intro": "Je conçois et mets en œuvre des plateformes Micro Frontend Angular : une application hôte compose à l'exécution des applications construites indépendamment. Chacune évolue et se déploie seule, tandis que l'utilisateur voit un produit unique et fluide.",
+      "diagram": {
+        "host": "Application hôte",
+        "hostText": "Navigation · mise en page · session",
+        "remotes": ["Remote · Domaine A", "Remote · Domaine B", "Remote · Domaine C"],
+        "shared": "Bibliothèques partagées & composants réutilisables",
+        "auth": "Keycloak · authentification et autorisation centralisées",
+        "pipeline": "CI/CD · builds sélectifs, un pipeline par application",
+        "label": "Vue d'ensemble : une application hôte charge des applications remote indépendantes qui partagent des bibliothèques, l'authentification Keycloak et des pipelines CI/CD"
+      },
+      "pillars": [
+        { "title": "Micro Frontends Angular", "text": "Une application hôte charge à l'exécution des applications Angular distantes. Chaque remote gère son domaine, ses routes et son cycle de livraison." },
+        { "title": "Native Federation", "text": "Composition à l'exécution fondée sur les standards du web (modules ES et import maps), indépendante du bundler, pour partager du code entre hôte et remotes." },
+        { "title": "Déploiement indépendant", "text": "Chaque frontend est construit, versionné et déployé séparément : livrer une fonctionnalité ne force jamais à redéployer toute la plateforme." },
+        { "title": "Bibliothèques & composants partagés", "text": "Des bibliothèques communes et des composants réutilisables garantissent une UX cohérente et évitent la duplication de code." },
+        { "title": "Communication hôte ↔ remote", "text": "Des contrats clairs entre l'hôte et ses remotes maintiennent les applications découplées tout en partageant le contexte nécessaire." },
+        { "title": "Authentification centralisée", "text": "Authentification unique avec Keycloak et contrôles de rôles et de permissions cohérents dans toutes les applications, appuyés sur des API Quarkus sécurisées." },
+        { "title": "Évolutif & maintenable", "text": "Des frontières claires entre applications, le support multi-tenant et des briques réutilisables gardent les gros front ends maîtrisables." },
+        { "title": "CI/CD & builds sélectifs", "text": "Des pipelines Jenkins ne construisent et ne déploient que les applications modifiées, sous forme d'images Docker sur OpenShift." }
+      ]
+    },
+    "easymat": {
+      "kicker": "Projet open source phare",
+      "title": "Easy Mat UI",
+      "creator": "Créé et maintenu par Redouane Chaibi",
+      "intro": "Une bibliothèque de composants Angular Material réutilisables qui transforme en configuration les écrans reconstruits à chaque projet. Décrivez un tableau de données une fois, avec ses colonnes, filtres, pagination et dialogue d'édition, et Easy Mat UI l'affiche.",
+      "featuresTitle": "Ce qu'elle fait",
+      "features": [
+        "Tableaux Angular Material configurables et réutilisables",
+        "Configuration dynamique des colonnes",
+        "Données hiérarchiques et regroupement",
+        "Filtrage et tri avancés",
+        "Cellules éditables et dialogue de création / édition / consultation",
+        "Lignes extensibles et tableaux enfants",
+        "Import et export",
+        "Mises en page responsives",
+        "Thèmes sombre et clair",
+        "Composants réutilisables pilotés par la configuration"
+      ],
+      "github": "Dépôt GitHub",
+      "npm": "Package npm",
+      "demo": "Démo en ligne",
+      "imageLight": "Tableau de données Easy Mat UI en mode clair avec colonnes typées, filtres d'en-tête et actions de ligne",
+      "imageDark": "Tableau de données Easy Mat UI en mode sombre avec colonnes typées, filtres d'en-tête et actions de ligne",
+      "caption": "Capture d'écran de la démo en ligne"
+    },
+    "experience": {
+      "kicker": "Parcours",
+      "title": "Expérience professionnelle",
+      "stack": "Environnement technique",
+      "current": "En cours",
+      "show": "Voir le détail",
+      "hide": "Masquer le détail",
+      "items": [
+        {
+          "title": "Chef de projet & Technical Leader",
+          "date": "Janvier 2020 – Actuel",
+          "tasks": [
+            "Développement et conception d'un outil de traçabilité des échantillons",
+            "Migration des applications de microservices Spring Boot vers Quarkus",
+            "Data Management",
+            "Mettre en œuvre des processus de gestion sémantique des métadonnées",
+            "Chef de projet - Spécialiste de l'interopérabilité",
+            "Participation à la mise en place de la partie CI/CD",
+            "Utilisation des outils Atlassian pour les tâches quotidiennes et production des documents demandés (JIRA, SMS, WIKI)",
+            "Effectuer/coordonner les déploiements dans chaque environnement au cours du cycle de développement",
+            "Assurer la formation et le coaching sur les technologies utilisées",
+            "Améliorer et maintenir les applications actuelles du point de vue des performances, de l'évolutivité et de la fiabilité",
+            "Participer à la mise en place des procédures du système qualité et à son processus de validation"
+          ]
+        },
+        {
+          "title": "Ingénieur logiciel – Chef de projet",
+          "date": "Juillet 2017 – Décembre 2019",
+          "tasks": [
+            "Mise en place d'un parcours de souscription en ligne (parcours client sans papier)",
+            "Développement et mise en place d'un outil de monitoring de base de données",
+            "Mise en place de la signature électronique",
+            "Mise en place d'une solution de paiement en ligne",
+            "Mise en place d'un système d'offre commerciale dynamique et adaptable",
+            "Automatisation des relances sur dossiers incomplets / impayés"
+          ]
+        },
+        {
+          "title": "Ingénieur logiciel - Chef de projet",
+          "date": "Août 2010 – Juillet 2017",
+          "tasks": [
+            "Développement de messagerie sécurisée MSS, APICRYPT",
+            "Développement d'une application qui met à jour les informations des professionnels de santé inscrits au Répertoire Partagé des Professionnels de Santé (RPPS)",
+            "Mise en place d'un système d'archivage électronique (ESA) et d'un délestage de la base de données",
+            "Intégration de Crystal Report dans Dx Care",
+            "Participation au projet PASS (Programme d'Appui au Secteur Santé)",
+            "Développement / adaptation de documents Web Intelligence",
+            "Participation au projet de recherche RAVEL (Recherche et Visualisation des informations dans le dossier électronique du patient)",
+            "Corrections/évolutions sur un produit de gestion administrative des patients",
+            "Développement des interfaces IHE LAB HL7 v2",
+            "Développement des interfaces HL7 v3 CDA R2 (Clinical Document Architecture)"
+          ]
+        },
+        {
+          "title": "Ingénieur de données",
+          "date": "Février 2010 – Août 2010",
+          "tasks": [
+            "Étude et mise en place d'un système d'indexation",
+            "Fouille de données bibliographiques, système d'indexation, moteur de recherche",
+            "Spécification des exigences",
+            "Conception et réalisation d'une base de données",
+            "Développement d'un ETL"
+          ]
+        }
+      ]
+    },
+    "education": {
+      "kicker": "Parcours académique",
+      "title": "Formation",
+      "items": [
+        { "title": "Formation au standard HL7 (v2.5, v3) et CDA", "date": "2014", "place": "Interopsante, Paris" },
+        { "title": "Master 2 Système d'Information et Aide à la Décision", "date": "2009 - 2010", "place": "ISIMA, Clermont-Ferrand, France" },
+        { "title": "Master 2 Recherche en informatique des Concepts aux Systèmes", "date": "2008 - 2009", "place": "UVSQ, Versailles, France" },
+        { "title": "Diplôme d'Ingénieur d'État en Informatique", "date": "2003 - 2008", "place": "USTHB, Alger" }
+      ],
+      "languagesTitle": "Langues",
+      "languages": [
+        { "name": "Français", "level": "Bilingue" },
+        { "name": "Anglais", "level": "Intermédiaire" },
+        { "name": "Arabe", "level": "Langue maternelle" }
+      ],
+      "interestsTitle": "Centres d'intérêt",
+      "interests": ["Globetrotter", "Course à pied", "Football"]
+    },
+    "contact": {
+      "kicker": "Contact",
+      "title": "Travaillons ensemble",
+      "text": "Une architecture Angular, des Micro Frontends ou des microservices Quarkus ? Je serai ravi d'en discuter.",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "location": "Localisation",
+      "locationValue": "Dudelange, Luxembourg",
+      "rights": "Réalisé avec Angular · © Redouane Chaibi",
+      "top": "Haut de page"
+    }
+  }
+}
