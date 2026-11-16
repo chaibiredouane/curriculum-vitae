@@ -13,7 +13,11 @@ export interface Content {
     stats: { value: string; label: string }[];
   };
   about: { paragraphs: string[]; values: Titled[] };
-  skills: { architectureItems: string[]; leadershipItems: string[] };
+  skills: {
+    architectureItems: string[];
+    leadershipItems: string[];
+    data: { title: string; text: string; items: string[] };
+  };
   mfe: { diagram: { remotes: string[] }; pillars: Titled[] };
   easymat: { features: string[]; evidence: Titled[] };
   experience: {

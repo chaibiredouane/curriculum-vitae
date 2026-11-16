@@ -27,21 +27,31 @@
         "Angular",
         "Micro Frontends",
         "Native Federation",
-        "Java · Quarkus",
+        "Java · Quarkus · Spring Boot",
         "Microservices",
-        "SQL Server",
+        "SQL Server · Oracle",
         "OpenShift"
       ],
       "leadership": "Architecture & technical leadership: Micro Frontend and microservices architectures, technical design, code quality and mentoring.",
+      "data": "Data-minded: SQL Server and Oracle, stored procedures in T-SQL and PL/SQL, Hibernate ORM, data modeling, ETL and data quality.",
       "ctaExperience": "View my experience",
       "ctaContact": "Get in touch",
       "ctaDownload": "Download CV",
       "easymatLabel": "Creator of Easy Mat UI",
       "easymatText": "My open-source Angular Material library, published on npm.",
       "stats": [
-        { "value": "{years}+", "label": "Years of experience" },
-        { "value": "4", "label": "Organizations" },
-        { "value": "3", "label": "Languages spoken" }
+        {
+          "value": "{years}+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "4",
+          "label": "Organizations"
+        },
+        {
+          "value": "3",
+          "label": "Languages spoken"
+        }
       ]
     },
     "about": {
@@ -104,7 +114,23 @@
         "Role and Permission Management",
         "Code quality and reusable solutions",
         "Team collaboration and technical mentoring"
-      ]
+      ],
+      "data": {
+        "title": "Data & SQL",
+        "text": "I model, query and optimise data every day across SQL Server and Oracle, write stored procedures in T-SQL and PL/SQL, and work with Hibernate ORM on the Java side, caring about data quality and governance as much as about the code that uses it.",
+        "items": [
+          "SQL Server 2019 / 2016 (T-SQL)",
+          "Oracle 18 / 11 (PL/SQL)",
+          "Stored procedures (T-SQL, PL/SQL)",
+          "Hibernate ORM",
+          "PostgreSQL",
+          "Data modeling",
+          "Database design",
+          "SQL optimization",
+          "ETL and data integration",
+          "Data quality and governance"
+        ]
+      }
     },
     "mfe": {
       "kicker": "Architecture",
@@ -305,7 +331,11 @@
       "kicker": "Background",
       "title": "Education & training",
       "items": [
-        { "title": "HL7 standard training", "date": "2014", "place": "Interopsante, Paris" },
+        {
+          "title": "HL7 standard training",
+          "date": "2014",
+          "place": "Interopsante, Paris"
+        },
         {
           "title": "Master's degree in Business Intelligence and Software",
           "date": "2009 - 2010",
@@ -316,18 +346,33 @@
           "date": "2008 - 2009",
           "place": "UVSQ, Versailles, France"
         },
-        { "title": "IT Engineer", "date": "2003 - 2008", "place": "USTHB, Algiers" }
+        {
+          "title": "IT Engineer",
+          "date": "2003 - 2008",
+          "place": "USTHB, Algiers"
+        }
       ],
       "languagesTitle": "Languages",
       "languages": [
-        { "name": "French", "level": "Bilingual" },
-        { "name": "English", "level": "Intermediate" },
-        { "name": "Arabic", "level": "Mother tongue" }
+        {
+          "name": "French",
+          "level": "Bilingual"
+        },
+        {
+          "name": "English",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Arabic",
+          "level": "Mother tongue"
+        }
       ],
       "interestsTitle": "Interests",
       "interests": ["Globetrotter", "Running", "Football"]
     },
-    "qr": { "scan": "Scan to open" },
+    "qr": {
+      "scan": "Scan to open"
+    },
     "contact": {
       "kicker": "Contact",
       "title": "Let's work together",

@@ -50,11 +50,26 @@ export const SKILL_GROUPS: SkillGroup[] = [
   },
   {
     key: 'backend',
-    items: ['Java', 'Quarkus', 'REST APIs', 'Microservices', 'Keycloak'],
+    items: [
+      'Java',
+      'Quarkus',
+      'Spring Boot',
+      'Hibernate ORM',
+      'REST APIs',
+      'Microservices',
+      'Keycloak',
+    ],
   },
   {
     key: 'database',
-    items: ['Microsoft SQL Server', 'Data modeling', 'Database design', 'SQL optimization'],
+    items: [
+      'Microsoft SQL Server',
+      'Oracle',
+      'Stored procedures (T-SQL, PL/SQL)',
+      'Data modeling',
+      'Database design',
+      'SQL optimization',
+    ],
   },
   {
     key: 'devops',
@@ -94,6 +109,7 @@ export const JOBS: Job[] = [
         items: [
           'Quarkus microservices',
           'Spring Boot',
+          'Hibernate ORM',
           'Java (11, 13)',
           'Python',
           'Groovy',
@@ -102,7 +118,14 @@ export const JOBS: Job[] = [
           'Windows PowerShell',
         ],
       },
-      { label: 'Database', items: ['SQL Server (2019, 2016) T-SQL', 'Oracle (v18, v11) PL/SQL'] },
+      {
+        label: 'Database',
+        items: [
+          'SQL Server (2019, 2016) T-SQL',
+          'Oracle (v18, v11) PL/SQL',
+          'Stored procedures (T-SQL, PL/SQL)',
+        ],
+      },
       {
         label: 'DevOps',
         items: ['Git', 'GitHub', 'Jenkins', 'Docker', 'Kubernetes', 'OpenShift', 'Argo CD'],

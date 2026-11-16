@@ -30,6 +30,9 @@ import { Icon } from '../shared/icon';
           <p class="leadership">
             <app-icon name="check" [size]="18" />{{ 'content.hero.leadership' | translate }}
           </p>
+          <p class="leadership">
+            <app-icon name="database" [size]="18" />{{ 'content.hero.data' | translate }}
+          </p>
 
           <div class="actions">
             <a class="btn btn--primary" routerLink="/cv" fragment="experience">
@@ -57,6 +60,14 @@ import { Icon } from '../shared/icon';
           <div class="frame">
             <img [src]="photo" [alt]="name" width="480" height="480" fetchpriority="high" />
           </div>
+          <ul class="floating" aria-hidden="true">
+            <li>Angular</li>
+            <li>Quarkus</li>
+            <li>Keycloak</li>
+            <li>SQL Server</li>
+            <li>OpenShift</li>
+            <li>Oracle</li>
+          </ul>
           <a class="easymat" routerLink="/cv" fragment="easymat">
             <span class="em-icon"><app-icon name="layout" [size]="20" /></span>
             <span>
@@ -194,6 +205,58 @@ import { Icon } from '../shared/icon';
       border-radius: 1.6rem;
       transform: rotate(-2deg) scale(1.04);
     }
+    .floating {
+      position: absolute;
+      inset: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      pointer-events: none;
+    }
+    .floating li {
+      position: absolute;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      font: 600 0.75rem/1 var(--font-mono);
+      animation: float 6s ease-in-out infinite;
+    }
+    .floating li:nth-child(1) {
+      top: 4%;
+      left: 2%;
+    }
+    .floating li:nth-child(2) {
+      top: 15%;
+      right: 2%;
+      animation-delay: -1s;
+    }
+    .floating li:nth-child(3) {
+      top: 34%;
+      left: 2%;
+      animation-delay: -2s;
+    }
+    .floating li:nth-child(4) {
+      top: 46%;
+      right: 2%;
+      animation-delay: -3s;
+    }
+    .floating li:nth-child(5) {
+      top: 62%;
+      left: 2%;
+      animation-delay: -4s;
+    }
+    .floating li:nth-child(6) {
+      top: 66%;
+      right: 2%;
+      animation-delay: -5s;
+    }
+    @keyframes float {
+      50% {
+        transform: translateY(-8px);
+      }
+    }
     .headline {
       max-width: 38rem;
       margin: 1rem 0 0;
@@ -263,6 +326,12 @@ import { Icon } from '../shared/icon';
       line-height: 1.35;
     }
     @media (min-width: 60rem) {
+      .floating li:nth-child(odd) {
+        left: -7%;
+      }
+      .floating li:nth-child(even) {
+        right: -8%;
+      }
       .grid {
         grid-template-columns: 1.25fr 0.75fr;
         gap: 4rem;

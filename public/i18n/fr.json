@@ -27,21 +27,31 @@
         "Angular",
         "Micro Frontends",
         "Native Federation",
-        "Java · Quarkus",
+        "Java · Quarkus · Spring Boot",
         "Microservices",
-        "SQL Server",
+        "SQL Server · Oracle",
         "OpenShift"
       ],
       "leadership": "Architecture et leadership technique : architectures Micro Frontend et microservices, conception technique, qualité du code et mentorat.",
+      "data": "Sensibilité data : SQL Server et Oracle, procédures stockées en T-SQL et PL/SQL, Hibernate ORM, modélisation de données, ETL et qualité des données.",
       "ctaExperience": "Voir mon expérience",
       "ctaContact": "Me contacter",
       "ctaDownload": "Télécharger le CV",
       "easymatLabel": "Créateur d'Easy Mat UI",
       "easymatText": "Ma bibliothèque open source Angular Material, publiée sur npm.",
       "stats": [
-        { "value": "{years}+", "label": "Années d'expérience" },
-        { "value": "4", "label": "Organisations" },
-        { "value": "3", "label": "Langues parlées" }
+        {
+          "value": "{years}+",
+          "label": "Années d'expérience"
+        },
+        {
+          "value": "4",
+          "label": "Organisations"
+        },
+        {
+          "value": "3",
+          "label": "Langues parlées"
+        }
       ]
     },
     "about": {
@@ -104,7 +114,23 @@
         "Gestion des rôles et des permissions",
         "Qualité du code et solutions réutilisables",
         "Collaboration d'équipe et mentorat technique"
-      ]
+      ],
+      "data": {
+        "title": "Data & SQL",
+        "text": "Je modélise, interroge et optimise les données au quotidien sur SQL Server et Oracle, j'écris des procédures stockées en T-SQL et PL/SQL et je travaille avec Hibernate ORM côté Java, avec autant d'attention pour la qualité et la gouvernance des données que pour le code qui les exploite.",
+        "items": [
+          "SQL Server 2019 / 2016 (T-SQL)",
+          "Oracle 18 / 11 (PL/SQL)",
+          "Procédures stockées (T-SQL, PL/SQL)",
+          "Hibernate ORM",
+          "PostgreSQL",
+          "Modélisation de données",
+          "Conception de bases de données",
+          "Optimisation SQL",
+          "ETL et intégration de données",
+          "Qualité et gouvernance des données"
+        ]
+      }
     },
     "mfe": {
       "kicker": "Architecture",
@@ -328,14 +354,25 @@
       ],
       "languagesTitle": "Langues",
       "languages": [
-        { "name": "Français", "level": "Bilingue" },
-        { "name": "Anglais", "level": "Intermédiaire" },
-        { "name": "Arabe", "level": "Langue maternelle" }
+        {
+          "name": "Français",
+          "level": "Bilingue"
+        },
+        {
+          "name": "Anglais",
+          "level": "Intermédiaire"
+        },
+        {
+          "name": "Arabe",
+          "level": "Langue maternelle"
+        }
       ],
       "interestsTitle": "Centres d'intérêt",
       "interests": ["Globetrotter", "Course à pied", "Football"]
     },
-    "qr": { "scan": "Scanner pour ouvrir" },
+    "qr": {
+      "scan": "Scanner pour ouvrir"
+    },
     "contact": {
       "kicker": "Contact",
       "title": "Travaillons ensemble",

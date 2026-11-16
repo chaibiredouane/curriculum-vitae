@@ -23,6 +23,19 @@ interface Group {
           [title]="'content.skills.title' | translate"
           [intro]="'content.skills.intro' | translate"
         />
+        @if (data(); as d) {
+          <article class="card data" appReveal>
+            <div class="data-intro">
+              <h3><app-icon name="database" />{{ d.title }}</h3>
+              <p>{{ d.text }}</p>
+            </div>
+            <ul class="data-items">
+              @for (item of d.items; track item) {
+                <li class="chip">{{ item }}</li>
+              }
+            </ul>
+          </article>
+        }
         <div class="grid">
           @for (g of groups(); track g.key) {
             <article class="card group" appReveal>
@@ -41,6 +54,45 @@ interface Group {
     </section>
   `,
   styles: `
+    .data {
+      display: grid;
+      gap: 1.25rem;
+      margin-block-end: 1.25rem;
+      padding: 1.5rem;
+      border-color: var(--accent);
+      background: radial-gradient(circle at 0% 0%, var(--glow), transparent 60%), var(--surface);
+    }
+    .data h3 {
+      margin-block-end: 0.5rem;
+      font-size: 1.25rem;
+    }
+    .data p {
+      margin: 0;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+    .data-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-content: start;
+    }
+    .data-items li {
+      padding-inline-start: 0.7rem;
+    }
+    .data-items li::before {
+      content: none;
+    }
+    @media (min-width: 64rem) {
+      .data {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2.5rem;
+      }
+      .group:nth-child(5) {
+        grid-column: span 2;
+      }
+    }
     .grid {
       display: grid;
       gap: 1.25rem;
@@ -95,6 +147,8 @@ export class Skills {
   private readonly lang = inject(LanguageService);
 
   /** Frontend, backend, architecture, database, DevOps and leadership, in recruiter-priority order. */
+  protected readonly data = computed(() => this.lang.c()?.skills.data);
+
   protected readonly groups = computed<Group[]>(() => {
     const skills = this.lang.c()?.skills;
     const tech = (key: string) => SKILL_GROUPS.find((g) => g.key === key)?.items ?? [];
@@ -102,7 +156,6 @@ export class Skills {
       { key: 'frontend', icon: 'layout', items: tech('frontend') },
       { key: 'backend', icon: 'server', items: tech('backend') },
       { key: 'architecture', icon: 'globe', items: skills?.architectureItems ?? [] },
-      { key: 'database', icon: 'database', items: tech('database') },
       { key: 'devops', icon: 'cloud', items: tech('devops') },
       { key: 'leadership', icon: 'check', items: skills?.leadershipItems ?? [] },
     ];
