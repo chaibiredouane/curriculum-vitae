@@ -5,6 +5,7 @@ export const PROFILE = {
   email: 'chaibi.redouane@gmail.com',
   phone: '+33 617 767 740',
   photo: 'images/perso/portrait.jpg',
+  linkedin: 'https://www.linkedin.com/in/redouane-chaibi-4463ab46/',
 };
 
 export const EASY_MAT_UI = {

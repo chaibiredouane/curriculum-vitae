@@ -40,9 +40,14 @@ import { Reveal } from '../shared/reveal';
             </li>
           </ul>
 
-          <a class="btn btn--primary" [href]="'mailto:' + p.email"
-            ><app-icon name="mail" [size]="18" />{{ 'content.hero.ctaContact' | translate }}</a
-          >
+          <div class="actions">
+            <a class="btn btn--primary" [href]="'mailto:' + p.email"
+              ><app-icon name="mail" [size]="18" />{{ 'content.hero.ctaContact' | translate }}</a
+            >
+            <a class="btn" [href]="p.linkedin" target="_blank" rel="noopener noreferrer"
+              ><app-icon name="linkedin" [size]="18" />LinkedIn</a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -50,7 +55,10 @@ import { Reveal } from '../shared/reveal';
     <footer class="footer">
       <div class="container row">
         <p>{{ 'content.contact.rights' | translate }}</p>
-        <nav class="social" aria-label="Easy Mat UI">
+        <nav class="social" aria-label="Links">
+          <a [href]="p.linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+            ><app-icon name="linkedin"
+          /></a>
           <a [href]="links.github" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
             ><app-icon name="github"
           /></a>
@@ -125,6 +133,12 @@ import { Reveal } from '../shared/reveal';
     .label {
       color: var(--text-muted);
       font-size: 0.78rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
     }
     .footer {
       padding-block: 1.75rem;
