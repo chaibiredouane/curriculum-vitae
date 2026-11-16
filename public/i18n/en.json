@@ -23,10 +23,19 @@
       "role": "Senior Full Stack Developer | Technical Lead | Software Architect",
       "headline": "{years}+ Years of Experience Building Scalable Software Solutions",
       "summary": "Over the years I have designed and delivered applications from health-sector software to online customer journeys and research platforms. Today I lead technical design and delivery with Angular Micro Frontends, Quarkus microservices, Keycloak and CI/CD on OpenShift.",
-      "expertise": ["Angular", "Micro Frontends", "Native Federation", "Java · Quarkus", "Microservices", "SQL Server", "OpenShift"],
+      "expertise": [
+        "Angular",
+        "Micro Frontends",
+        "Native Federation",
+        "Java · Quarkus",
+        "Microservices",
+        "SQL Server",
+        "OpenShift"
+      ],
       "leadership": "Architecture & technical leadership: Micro Frontend and microservices architectures, technical design, code quality and mentoring.",
       "ctaExperience": "View my experience",
       "ctaContact": "Get in touch",
+      "ctaDownload": "Download CV",
       "easymatLabel": "Creator of Easy Mat UI",
       "easymatText": "My open-source Angular Material library, published on npm.",
       "stats": [
@@ -45,12 +54,30 @@
       ],
       "valuesTitle": "How I work",
       "values": [
-        { "title": "Passionate about engineering", "text": "I enjoy software engineering and I am motivated by complex technical challenges." },
-        { "title": "Quality first", "text": "Clean, maintainable and scalable code, with quality procedures built into delivery." },
-        { "title": "Always learning", "text": "From .NET and Oracle to Angular, Quarkus and OpenShift: my stack has kept evolving." },
-        { "title": "Proactive problem solving", "text": "I spot technical problems early and favour reusable solutions over one-off fixes." },
-        { "title": "Technical ownership", "text": "Comfortable owning technical design, deployments and the delivery of an application." },
-        { "title": "Collaboration & sharing", "text": "Coaching colleagues and sharing knowledge so that the whole team moves faster." }
+        {
+          "title": "Passionate about engineering",
+          "text": "I enjoy software engineering and I am motivated by complex technical challenges."
+        },
+        {
+          "title": "Quality first",
+          "text": "Clean, maintainable and scalable code, with quality procedures built into delivery."
+        },
+        {
+          "title": "Always learning",
+          "text": "From .NET and Oracle to Angular, Quarkus and OpenShift: my stack has kept evolving."
+        },
+        {
+          "title": "Proactive problem solving",
+          "text": "I spot technical problems early and favour reusable solutions over one-off fixes."
+        },
+        {
+          "title": "Technical ownership",
+          "text": "Comfortable owning technical design, deployments and the delivery of an application."
+        },
+        {
+          "title": "Collaboration & sharing",
+          "text": "Coaching colleagues and sharing knowledge so that the whole team moves faster."
+        }
       ]
     },
     "skills": {
@@ -93,14 +120,38 @@
         "label": "Architecture overview: a host shell loads independent remote applications that share libraries, Keycloak authentication and CI/CD pipelines"
       },
       "pillars": [
-        { "title": "Angular Micro Frontends", "text": "A host application loads remote Angular applications at runtime. Each remote owns its domain, its routes and its release cycle." },
-        { "title": "Native Federation", "text": "Runtime composition built on web standards (ES modules and import maps), independent of the bundler, to share code between host and remotes." },
-        { "title": "Independent deployment", "text": "Each frontend is built, versioned and deployed on its own, so shipping one feature never means redeploying the whole platform." },
-        { "title": "Shared libraries & components", "text": "Common libraries and reusable components keep the UX consistent and prevent duplicated code across applications." },
-        { "title": "Host ↔ remote communication", "text": "Clear contracts between the shell and its remotes keep applications decoupled while they still share the context they need." },
-        { "title": "Centralized authentication", "text": "Single sign-on with Keycloak and consistent role and permission checks across every application, backed by secured Quarkus APIs." },
-        { "title": "Scalable & maintainable", "text": "Clear boundaries between applications, multi-tenant support and reusable building blocks keep large front ends manageable as they grow." },
-        { "title": "CI/CD & selective builds", "text": "Jenkins pipelines build and deploy only the applications that changed, as Docker images on OpenShift." }
+        {
+          "title": "Angular Micro Frontends",
+          "text": "A host application loads remote Angular applications at runtime. Each remote owns its domain, its routes and its release cycle."
+        },
+        {
+          "title": "Native Federation",
+          "text": "Runtime composition built on web standards (ES modules and import maps), independent of the bundler, to share code between host and remotes."
+        },
+        {
+          "title": "Independent deployment",
+          "text": "Each frontend is built, versioned and deployed on its own, so shipping one feature never means redeploying the whole platform."
+        },
+        {
+          "title": "Shared libraries & components",
+          "text": "Common libraries and reusable components keep the UX consistent and prevent duplicated code across applications."
+        },
+        {
+          "title": "Host ↔ remote communication",
+          "text": "Clear contracts between the shell and its remotes keep applications decoupled while they still share the context they need."
+        },
+        {
+          "title": "Centralized authentication",
+          "text": "Single sign-on with Keycloak and consistent role and permission checks across every application, backed by secured Quarkus APIs."
+        },
+        {
+          "title": "Scalable & maintainable",
+          "text": "Clear boundaries between applications, multi-tenant support and reusable building blocks keep large front ends manageable as they grow."
+        },
+        {
+          "title": "CI/CD & selective builds",
+          "text": "Jenkins pipelines build and deploy only the applications that changed, as Docker images on OpenShift."
+        }
       ]
     },
     "easymat": {
@@ -123,12 +174,30 @@
       ],
       "evidenceTitle": "What it shows",
       "evidence": [
-        { "title": "Technical initiative", "text": "Conceived, built and published as an open-source package on npm." },
-        { "title": "Software design", "text": "One typed configuration object drives tables, filters, dialogs and child tables." },
-        { "title": "Reusable architecture", "text": "Configuration-driven components that adapt to each project's data." },
-        { "title": "Independent product development", "text": "Owned end to end: design, implementation, documentation, demo site and releases." },
-        { "title": "Problem solving", "text": "Removes the repeated work of rebuilding data tables in every project." },
-        { "title": "Angular ecosystem", "text": "Built on Angular Material and compatible with Angular 20 and later." }
+        {
+          "title": "Technical initiative",
+          "text": "Conceived, built and published as an open-source package on npm."
+        },
+        {
+          "title": "Software design",
+          "text": "One typed configuration object drives tables, filters, dialogs and child tables."
+        },
+        {
+          "title": "Reusable architecture",
+          "text": "Configuration-driven components that adapt to each project's data."
+        },
+        {
+          "title": "Independent product development",
+          "text": "Owned end to end: design, implementation, documentation, demo site and releases."
+        },
+        {
+          "title": "Problem solving",
+          "text": "Removes the repeated work of rebuilding data tables in every project."
+        },
+        {
+          "title": "Angular ecosystem",
+          "text": "Built on Angular Material and compatible with Angular 20 and later."
+        }
       ],
       "github": "GitHub repository",
       "npm": "npm package",
@@ -143,10 +212,26 @@
       "intro": "{years}+ years, four organizations and a steady progression from data engineering to technical leadership.",
       "evolutionTitle": "Technical evolution",
       "evolution": [
-        { "period": "2010", "title": "Data engineering", "text": "Java, SQL, ETL and PostgreSQL: an indexing system and its database." },
-        { "period": "2010 – 2017", "title": "Health-sector software", "text": "C# / .NET, Oracle, HL7 and CDA interoperability, secure messaging." },
-        { "period": "2017 – 2019", "title": "Web platforms", "text": "ASP.NET and SQL Server: online subscription, e-signature and online payment." },
-        { "period": "2020 – today", "title": "Architecture & leadership", "text": "Angular Micro Frontends, Quarkus microservices, Keycloak, CI/CD on OpenShift." }
+        {
+          "period": "2010",
+          "title": "Data engineering",
+          "text": "Java, SQL, ETL and PostgreSQL: an indexing system and its database."
+        },
+        {
+          "period": "2010 – 2017",
+          "title": "Health-sector software",
+          "text": "C# / .NET, Oracle, HL7 and CDA interoperability, secure messaging."
+        },
+        {
+          "period": "2017 – 2019",
+          "title": "Web platforms",
+          "text": "ASP.NET and SQL Server: online subscription, e-signature and online payment."
+        },
+        {
+          "period": "2020 – today",
+          "title": "Architecture & leadership",
+          "text": "Angular Micro Frontends, Quarkus microservices, Keycloak, CI/CD on OpenShift."
+        }
       ],
       "tasks": "Key responsibilities & contributions",
       "stack": "Technologies & tools",
@@ -221,8 +306,16 @@
       "title": "Education & training",
       "items": [
         { "title": "HL7 standard training", "date": "2014", "place": "Interopsante, Paris" },
-        { "title": "Master's degree in Business Intelligence and Software", "date": "2009 - 2010", "place": "ISIMA, Clermont-Ferrand, France" },
-        { "title": "Master's degree in computer research of Concepts to Systems", "date": "2008 - 2009", "place": "UVSQ, Versailles, France" },
+        {
+          "title": "Master's degree in Business Intelligence and Software",
+          "date": "2009 - 2010",
+          "place": "ISIMA, Clermont-Ferrand, France"
+        },
+        {
+          "title": "Master's degree in computer research of Concepts to Systems",
+          "date": "2008 - 2009",
+          "place": "UVSQ, Versailles, France"
+        },
         { "title": "IT Engineer", "date": "2003 - 2008", "place": "USTHB, Algiers" }
       ],
       "languagesTitle": "Languages",
@@ -234,6 +327,7 @@
       "interestsTitle": "Interests",
       "interests": ["Globetrotter", "Running", "Football"]
     },
+    "qr": { "scan": "Scan to open" },
     "contact": {
       "kicker": "Contact",
       "title": "Let's work together",

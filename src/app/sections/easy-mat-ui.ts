@@ -1,14 +1,15 @@
 import { Component, computed, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../core/language.service';
-import { EASY_MAT_UI } from '../core/cv.data';
+import { EASY_MAT_UI, QR_CODES } from '../core/cv.data';
 import { ThemeService } from '../core/theme.service';
 import { Icon } from '../shared/icon';
+import { QrCode } from '../shared/qr-code';
 import { Reveal } from '../shared/reveal';
 
 @Component({
   selector: 'app-easy-mat-ui',
-  imports: [TranslatePipe, Icon, Reveal],
+  imports: [TranslatePipe, Icon, QrCode, Reveal],
   template: `
     <section id="easymat" class="section">
       <div class="container">
@@ -45,6 +46,16 @@ import { Reveal } from '../shared/reveal';
               </a>
             </div>
             <code class="install">npm install easy-mat-ui</code>
+
+            <div class="qr-row">
+              <app-qr-code [href]="links.github" [src]="qr.github" label="GitHub" />
+              <app-qr-code [href]="links.npm" [src]="qr.npm" label="npm" />
+              <app-qr-code
+                [href]="links.demo"
+                [src]="qr.demo"
+                [label]="'content.easymat.demo' | translate"
+              />
+            </div>
           </div>
 
           <figure class="shot">
@@ -191,6 +202,12 @@ import { Reveal } from '../shared/reveal';
         grid-template-columns: repeat(3, 1fr);
       }
     }
+    .qr-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-block-start: 1.5rem;
+    }
     .shot {
       align-self: center;
       margin: 0;
@@ -230,4 +247,5 @@ export class EasyMatUi {
   protected readonly em = computed(() => this.lang.c()?.easymat);
   protected readonly theme = inject(ThemeService);
   protected readonly links = EASY_MAT_UI;
+  protected readonly qr = QR_CODES;
 }

@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { EASY_MAT_UI, PROFILE } from '../core/cv.data';
+import { LanguageService } from '../core/language.service';
+import { CV_PDF, EASY_MAT_UI, PROFILE, QR_CODES } from '../core/cv.data';
 import { Icon } from '../shared/icon';
+import { QrCode } from '../shared/qr-code';
 import { Reveal } from '../shared/reveal';
 
 @Component({
   selector: 'app-contact',
-  imports: [RouterLink, TranslatePipe, Icon, Reveal],
+  imports: [RouterLink, TranslatePipe, Icon, QrCode, Reveal],
   template: `
     <section id="contact" class="section">
       <div class="container">
@@ -47,6 +49,13 @@ import { Reveal } from '../shared/reveal';
             <a class="btn" [href]="p.linkedin" target="_blank" rel="noopener noreferrer"
               ><app-icon name="linkedin" [size]="18" />LinkedIn</a
             >
+            <a class="btn" [href]="cvPdf()" download>
+              <app-icon name="download" [size]="18" />{{ 'content.hero.ctaDownload' | translate }}
+            </a>
+          </div>
+
+          <div class="qr-contact">
+            <app-qr-code [href]="p.linkedin" [src]="qr.linkedin" label="LinkedIn" />
           </div>
         </div>
       </div>
@@ -140,6 +149,11 @@ import { Reveal } from '../shared/reveal';
       gap: 0.75rem;
       justify-content: center;
     }
+    .qr-contact {
+      display: flex;
+      justify-content: center;
+      margin-block-start: 1.75rem;
+    }
     .footer {
       padding-block: 1.75rem;
       border-block-start: 1px solid var(--border);
@@ -183,7 +197,10 @@ import { Reveal } from '../shared/reveal';
   `,
 })
 export class Contact {
+  private readonly lang = inject(LanguageService);
+  protected readonly cvPdf = computed(() => CV_PDF[this.lang.current().code]);
   protected readonly p = PROFILE;
   protected readonly links = EASY_MAT_UI;
+  protected readonly qr = QR_CODES;
   protected readonly phoneHref = PROFILE.phone.replace(/\s/g, '');
 }

@@ -8,6 +8,20 @@ export const PROFILE = {
   linkedin: 'https://www.linkedin.com/in/redouane-chaibi-4463ab46/',
 };
 
+/** PDF résumé per interface language (Arabic falls back to English). */
+export const CV_PDF: Record<string, string> = {
+  en: 'downloads/Redouane-Chaibi-CV-EN.pdf',
+  fr: 'downloads/Redouane-Chaibi-CV-FR.pdf',
+  ar: 'downloads/Redouane-Chaibi-CV-EN.pdf',
+};
+
+export const QR_CODES = {
+  github: 'images/qr/qr-github.svg',
+  npm: 'images/qr/qr-npm.svg',
+  demo: 'images/qr/qr-demo.svg',
+  linkedin: 'images/qr/qr-linkedin.svg',
+};
+
 export const EASY_MAT_UI = {
   github: 'https://github.com/chaibiredouane/easy-mat-ui',
   npm: 'https://www.npmjs.com/package/easy-mat-ui',

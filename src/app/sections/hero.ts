@@ -2,7 +2,7 @@ import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../core/language.service';
-import { PROFILE } from '../core/cv.data';
+import { CV_PDF, PROFILE } from '../core/cv.data';
 import { Icon } from '../shared/icon';
 
 @Component({
@@ -37,6 +37,9 @@ import { Icon } from '../shared/icon';
             </a>
             <a class="btn" routerLink="/cv" fragment="contact">
               <app-icon name="mail" [size]="18" />{{ 'content.hero.ctaContact' | translate }}
+            </a>
+            <a class="btn" [href]="cvPdf()" download>
+              <app-icon name="download" [size]="18" />{{ 'content.hero.ctaDownload' | translate }}
             </a>
           </div>
 
@@ -270,6 +273,7 @@ import { Icon } from '../shared/icon';
 export class Hero {
   private readonly lang = inject(LanguageService);
   protected readonly hero = computed(() => this.lang.c()?.hero);
+  protected readonly cvPdf = computed(() => CV_PDF[this.lang.current().code]);
   protected readonly name = PROFILE.name;
   protected readonly photo = PROFILE.photo;
 }

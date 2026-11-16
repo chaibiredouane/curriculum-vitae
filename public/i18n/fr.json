@@ -23,10 +23,19 @@
       "role": "Développeur Full Stack senior | Lead technique | Architecte logiciel",
       "headline": "{years}+ ans d'expérience dans la conception de solutions logicielles évolutives",
       "summary": "Au fil des années, je conçois et livre des applications, des logiciels du secteur de la santé aux parcours clients en ligne et aux plateformes de recherche. Aujourd'hui, je pilote la conception technique et la livraison avec des Micro Frontends Angular, des microservices Quarkus, Keycloak et du CI/CD sur OpenShift.",
-      "expertise": ["Angular", "Micro Frontends", "Native Federation", "Java · Quarkus", "Microservices", "SQL Server", "OpenShift"],
+      "expertise": [
+        "Angular",
+        "Micro Frontends",
+        "Native Federation",
+        "Java · Quarkus",
+        "Microservices",
+        "SQL Server",
+        "OpenShift"
+      ],
       "leadership": "Architecture et leadership technique : architectures Micro Frontend et microservices, conception technique, qualité du code et mentorat.",
       "ctaExperience": "Voir mon expérience",
       "ctaContact": "Me contacter",
+      "ctaDownload": "Télécharger le CV",
       "easymatLabel": "Créateur d'Easy Mat UI",
       "easymatText": "Ma bibliothèque open source Angular Material, publiée sur npm.",
       "stats": [
@@ -45,12 +54,30 @@
       ],
       "valuesTitle": "Ma façon de travailler",
       "values": [
-        { "title": "Passionné d'ingénierie", "text": "J'aime l'ingénierie logicielle et les défis techniques complexes me motivent." },
-        { "title": "La qualité d'abord", "text": "Un code propre, maintenable et évolutif, avec des procédures qualité intégrées à la livraison." },
-        { "title": "Toujours en apprentissage", "text": "De .NET et Oracle à Angular, Quarkus et OpenShift : ma pile technique ne cesse d'évoluer." },
-        { "title": "Résolution proactive", "text": "Je repère tôt les problèmes techniques et privilégie les solutions réutilisables aux correctifs ponctuels." },
-        { "title": "Responsabilité technique", "text": "À l'aise pour porter la conception technique, les déploiements et la livraison d'une application." },
-        { "title": "Collaboration & partage", "text": "J'accompagne mes collègues et partage mes connaissances pour que toute l'équipe avance plus vite." }
+        {
+          "title": "Passionné d'ingénierie",
+          "text": "J'aime l'ingénierie logicielle et les défis techniques complexes me motivent."
+        },
+        {
+          "title": "La qualité d'abord",
+          "text": "Un code propre, maintenable et évolutif, avec des procédures qualité intégrées à la livraison."
+        },
+        {
+          "title": "Toujours en apprentissage",
+          "text": "De .NET et Oracle à Angular, Quarkus et OpenShift : ma pile technique ne cesse d'évoluer."
+        },
+        {
+          "title": "Résolution proactive",
+          "text": "Je repère tôt les problèmes techniques et privilégie les solutions réutilisables aux correctifs ponctuels."
+        },
+        {
+          "title": "Responsabilité technique",
+          "text": "À l'aise pour porter la conception technique, les déploiements et la livraison d'une application."
+        },
+        {
+          "title": "Collaboration & partage",
+          "text": "J'accompagne mes collègues et partage mes connaissances pour que toute l'équipe avance plus vite."
+        }
       ]
     },
     "skills": {
@@ -93,14 +120,38 @@
         "label": "Vue d'ensemble : une application hôte charge des applications remote indépendantes qui partagent des bibliothèques, l'authentification Keycloak et des pipelines CI/CD"
       },
       "pillars": [
-        { "title": "Micro Frontends Angular", "text": "Une application hôte charge à l'exécution des applications Angular distantes. Chaque remote gère son domaine, ses routes et son cycle de livraison." },
-        { "title": "Native Federation", "text": "Composition à l'exécution fondée sur les standards du web (modules ES et import maps), indépendante du bundler, pour partager du code entre hôte et remotes." },
-        { "title": "Déploiement indépendant", "text": "Chaque frontend est construit, versionné et déployé séparément : livrer une fonctionnalité ne force jamais à redéployer toute la plateforme." },
-        { "title": "Bibliothèques & composants partagés", "text": "Des bibliothèques communes et des composants réutilisables garantissent une UX cohérente et évitent la duplication de code." },
-        { "title": "Communication hôte ↔ remote", "text": "Des contrats clairs entre l'hôte et ses remotes maintiennent les applications découplées tout en partageant le contexte nécessaire." },
-        { "title": "Authentification centralisée", "text": "Authentification unique avec Keycloak et contrôles de rôles et de permissions cohérents dans toutes les applications, appuyés sur des API Quarkus sécurisées." },
-        { "title": "Évolutif & maintenable", "text": "Des frontières claires entre applications, le support multi-tenant et des briques réutilisables gardent les gros front ends maîtrisables." },
-        { "title": "CI/CD & builds sélectifs", "text": "Des pipelines Jenkins ne construisent et ne déploient que les applications modifiées, sous forme d'images Docker sur OpenShift." }
+        {
+          "title": "Micro Frontends Angular",
+          "text": "Une application hôte charge à l'exécution des applications Angular distantes. Chaque remote gère son domaine, ses routes et son cycle de livraison."
+        },
+        {
+          "title": "Native Federation",
+          "text": "Composition à l'exécution fondée sur les standards du web (modules ES et import maps), indépendante du bundler, pour partager du code entre hôte et remotes."
+        },
+        {
+          "title": "Déploiement indépendant",
+          "text": "Chaque frontend est construit, versionné et déployé séparément : livrer une fonctionnalité ne force jamais à redéployer toute la plateforme."
+        },
+        {
+          "title": "Bibliothèques & composants partagés",
+          "text": "Des bibliothèques communes et des composants réutilisables garantissent une UX cohérente et évitent la duplication de code."
+        },
+        {
+          "title": "Communication hôte ↔ remote",
+          "text": "Des contrats clairs entre l'hôte et ses remotes maintiennent les applications découplées tout en partageant le contexte nécessaire."
+        },
+        {
+          "title": "Authentification centralisée",
+          "text": "Authentification unique avec Keycloak et contrôles de rôles et de permissions cohérents dans toutes les applications, appuyés sur des API Quarkus sécurisées."
+        },
+        {
+          "title": "Évolutif & maintenable",
+          "text": "Des frontières claires entre applications, le support multi-tenant et des briques réutilisables gardent les gros front ends maîtrisables."
+        },
+        {
+          "title": "CI/CD & builds sélectifs",
+          "text": "Des pipelines Jenkins ne construisent et ne déploient que les applications modifiées, sous forme d'images Docker sur OpenShift."
+        }
       ]
     },
     "easymat": {
@@ -123,12 +174,30 @@
       ],
       "evidenceTitle": "Ce que cela démontre",
       "evidence": [
-        { "title": "Esprit d'initiative", "text": "Conçue, développée et publiée comme package open source sur npm." },
-        { "title": "Conception logicielle", "text": "Un seul objet de configuration typé pilote tableaux, filtres, dialogues et tableaux enfants." },
-        { "title": "Architecture réutilisable", "text": "Des composants pilotés par la configuration, adaptés aux données de chaque projet." },
-        { "title": "Développement de produit autonome", "text": "Pris en charge de bout en bout : conception, implémentation, documentation, site de démo et versions." },
-        { "title": "Résolution de problèmes", "text": "Supprime le travail répétitif de reconstruction des tableaux de données dans chaque projet." },
-        { "title": "Écosystème Angular", "text": "Construite sur Angular Material et compatible avec Angular 20 et suivants." }
+        {
+          "title": "Esprit d'initiative",
+          "text": "Conçue, développée et publiée comme package open source sur npm."
+        },
+        {
+          "title": "Conception logicielle",
+          "text": "Un seul objet de configuration typé pilote tableaux, filtres, dialogues et tableaux enfants."
+        },
+        {
+          "title": "Architecture réutilisable",
+          "text": "Des composants pilotés par la configuration, adaptés aux données de chaque projet."
+        },
+        {
+          "title": "Développement de produit autonome",
+          "text": "Pris en charge de bout en bout : conception, implémentation, documentation, site de démo et versions."
+        },
+        {
+          "title": "Résolution de problèmes",
+          "text": "Supprime le travail répétitif de reconstruction des tableaux de données dans chaque projet."
+        },
+        {
+          "title": "Écosystème Angular",
+          "text": "Construite sur Angular Material et compatible avec Angular 20 et suivants."
+        }
       ],
       "github": "Dépôt GitHub",
       "npm": "Package npm",
@@ -143,10 +212,26 @@
       "intro": "{years}+ ans, quatre organisations et une progression constante de l'ingénierie de données au leadership technique.",
       "evolutionTitle": "Évolution technique",
       "evolution": [
-        { "period": "2010", "title": "Ingénierie de données", "text": "Java, SQL, ETL et PostgreSQL : un système d'indexation et sa base de données." },
-        { "period": "2010 – 2017", "title": "Logiciels du secteur santé", "text": "C# / .NET, Oracle, interopérabilité HL7 et CDA, messagerie sécurisée." },
-        { "period": "2017 – 2019", "title": "Plateformes web", "text": "ASP.NET et SQL Server : souscription en ligne, signature électronique et paiement en ligne." },
-        { "period": "2020 – aujourd'hui", "title": "Architecture & leadership", "text": "Micro Frontends Angular, microservices Quarkus, Keycloak, CI/CD sur OpenShift." }
+        {
+          "period": "2010",
+          "title": "Ingénierie de données",
+          "text": "Java, SQL, ETL et PostgreSQL : un système d'indexation et sa base de données."
+        },
+        {
+          "period": "2010 – 2017",
+          "title": "Logiciels du secteur santé",
+          "text": "C# / .NET, Oracle, interopérabilité HL7 et CDA, messagerie sécurisée."
+        },
+        {
+          "period": "2017 – 2019",
+          "title": "Plateformes web",
+          "text": "ASP.NET et SQL Server : souscription en ligne, signature électronique et paiement en ligne."
+        },
+        {
+          "period": "2020 – aujourd'hui",
+          "title": "Architecture & leadership",
+          "text": "Micro Frontends Angular, microservices Quarkus, Keycloak, CI/CD sur OpenShift."
+        }
       ],
       "tasks": "Responsabilités et contributions clés",
       "stack": "Technologies et outils",
@@ -220,10 +305,26 @@
       "kicker": "Parcours académique",
       "title": "Formation",
       "items": [
-        { "title": "Formation au standard HL7 (v2.5, v3) et CDA", "date": "2014", "place": "Interopsante, Paris" },
-        { "title": "Master 2 Système d'Information et Aide à la Décision", "date": "2009 - 2010", "place": "ISIMA, Clermont-Ferrand, France" },
-        { "title": "Master 2 Recherche en informatique des Concepts aux Systèmes", "date": "2008 - 2009", "place": "UVSQ, Versailles, France" },
-        { "title": "Diplôme d'Ingénieur d'État en Informatique", "date": "2003 - 2008", "place": "USTHB, Alger" }
+        {
+          "title": "Formation au standard HL7 (v2.5, v3) et CDA",
+          "date": "2014",
+          "place": "Interopsante, Paris"
+        },
+        {
+          "title": "Master 2 Système d'Information et Aide à la Décision",
+          "date": "2009 - 2010",
+          "place": "ISIMA, Clermont-Ferrand, France"
+        },
+        {
+          "title": "Master 2 Recherche en informatique des Concepts aux Systèmes",
+          "date": "2008 - 2009",
+          "place": "UVSQ, Versailles, France"
+        },
+        {
+          "title": "Diplôme d'Ingénieur d'État en Informatique",
+          "date": "2003 - 2008",
+          "place": "USTHB, Alger"
+        }
       ],
       "languagesTitle": "Langues",
       "languages": [
@@ -234,6 +335,7 @@
       "interestsTitle": "Centres d'intérêt",
       "interests": ["Globetrotter", "Course à pied", "Football"]
     },
+    "qr": { "scan": "Scanner pour ouvrir" },
     "contact": {
       "kicker": "Contact",
       "title": "Travaillons ensemble",
