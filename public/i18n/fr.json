@@ -22,7 +22,7 @@
       "hello": "Bonjour, je suis",
       "role": "Développeur Full Stack senior | Lead technique | Architecte logiciel",
       "headline": "{years}+ ans d'expérience dans la conception de solutions logicielles évolutives",
-      "summary": "Depuis 2010, je conçois et livre des applications, des logiciels du secteur de la santé aux parcours clients en ligne et aux plateformes de recherche. Aujourd'hui, je pilote la conception technique et la livraison avec des Micro Frontends Angular, des microservices Quarkus, Keycloak et du CI/CD sur OpenShift.",
+      "summary": "Au fil des années, je conçois et livre des applications, des logiciels du secteur de la santé aux parcours clients en ligne et aux plateformes de recherche. Aujourd'hui, je pilote la conception technique et la livraison avec des Micro Frontends Angular, des microservices Quarkus, Keycloak et du CI/CD sur OpenShift.",
       "expertise": ["Angular", "Micro Frontends", "Native Federation", "Java · Quarkus", "Microservices", "SQL Server", "OpenShift"],
       "leadership": "Architecture et leadership technique : architectures Micro Frontend et microservices, conception technique, qualité du code et mentorat.",
       "ctaExperience": "Voir mon expérience",
@@ -31,15 +31,15 @@
       "easymatText": "Ma bibliothèque open source Angular Material, publiée sur npm.",
       "stats": [
         { "value": "{years}+", "label": "Années d'expérience" },
-        { "value": "2010", "label": "Début de carrière" },
-        { "value": "4", "label": "Organisations" }
+        { "value": "4", "label": "Organisations" },
+        { "value": "3", "label": "Langues parlées" }
       ]
     },
     "about": {
       "kicker": "Profil",
       "title": "Présentation professionnelle",
       "paragraphs": [
-        "Avec {years}+ ans d'expérience en ingénierie logicielle, j'allie expertise technique, vision d'architecte et exigence de qualité. Depuis 2010, j'ai travaillé sur des logiciels du secteur de la santé, des plateformes de souscription et de paiement en ligne et de l'ingénierie de données ; je suis aujourd'hui Chef de projet & Technical Leader au Luxembourg Institute of Health.",
+        "Avec {years}+ ans d'expérience en ingénierie logicielle, j'allie expertise technique, vision d'architecte et exigence de qualité. J'ai travaillé sur des logiciels du secteur de la santé, des plateformes de souscription et de paiement en ligne et de l'ingénierie de données ; je suis aujourd'hui Chef de projet & Technical Leader au Luxembourg Institute of Health.",
         "J'ai évolué en continu avec les technologies : de C# / .NET et Oracle, en passant par ASP.NET et SQL Server, jusqu'aux Micro Frontends Angular, aux microservices Java et Quarkus, à Keycloak et à OpenShift. Je conçois et développe des applications évolutives, des architectures frontend modernes et des systèmes backend robustes.",
         "Au-delà du développement, j'accorde de l'importance à l'excellence technique, aux solutions réutilisables et au partage des connaissances. J'accompagne mes collègues et j'ai créé Easy Mat UI, une bibliothèque open source Angular Material, pour configurer une fois et réutiliser les écrans riches en données."
       ],
@@ -47,7 +47,7 @@
       "values": [
         { "title": "Passionné d'ingénierie", "text": "J'aime l'ingénierie logicielle et les défis techniques complexes me motivent." },
         { "title": "La qualité d'abord", "text": "Un code propre, maintenable et évolutif, avec des procédures qualité intégrées à la livraison." },
-        { "title": "Toujours en apprentissage", "text": "De .NET et Oracle à Angular, Quarkus et OpenShift : ma pile technique évolue depuis 2010." },
+        { "title": "Toujours en apprentissage", "text": "De .NET et Oracle à Angular, Quarkus et OpenShift : ma pile technique ne cesse d'évoluer." },
         { "title": "Résolution proactive", "text": "Je repère tôt les problèmes techniques et privilégie les solutions réutilisables aux correctifs ponctuels." },
         { "title": "Responsabilité technique", "text": "À l'aise pour porter la conception technique, les déploiements et la livraison d'une application." },
         { "title": "Collaboration & partage", "text": "J'accompagne mes collègues et partage mes connaissances pour que toute l'équipe avance plus vite." }
@@ -138,7 +138,7 @@
       "caption": "Capture d'écran de la démo en ligne"
     },
     "experience": {
-      "kicker": "Carrière depuis 2010",
+      "kicker": "Carrière",
       "title": "Expérience professionnelle",
       "intro": "{years}+ ans, quatre organisations et une progression constante de l'ingénierie de données au leadership technique.",
       "evolutionTitle": "Évolution technique",

@@ -22,7 +22,7 @@
       "hello": "Hi, I'm",
       "role": "Senior Full Stack Developer | Technical Lead | Software Architect",
       "headline": "{years}+ Years of Experience Building Scalable Software Solutions",
-      "summary": "Since 2010 I have designed and delivered applications from health-sector software to online customer journeys and research platforms. Today I lead technical design and delivery with Angular Micro Frontends, Quarkus microservices, Keycloak and CI/CD on OpenShift.",
+      "summary": "Over the years I have designed and delivered applications from health-sector software to online customer journeys and research platforms. Today I lead technical design and delivery with Angular Micro Frontends, Quarkus microservices, Keycloak and CI/CD on OpenShift.",
       "expertise": ["Angular", "Micro Frontends", "Native Federation", "Java · Quarkus", "Microservices", "SQL Server", "OpenShift"],
       "leadership": "Architecture & technical leadership: Micro Frontend and microservices architectures, technical design, code quality and mentoring.",
       "ctaExperience": "View my experience",
@@ -31,15 +31,15 @@
       "easymatText": "My open-source Angular Material library, published on npm.",
       "stats": [
         { "value": "{years}+", "label": "Years of experience" },
-        { "value": "2010", "label": "Career started" },
-        { "value": "4", "label": "Organizations" }
+        { "value": "4", "label": "Organizations" },
+        { "value": "3", "label": "Languages spoken" }
       ]
     },
     "about": {
       "kicker": "Profile",
       "title": "Professional introduction",
       "paragraphs": [
-        "With {years}+ years in software engineering, I combine deep technical expertise, architectural vision and a commitment to high-quality software. Since 2010 I have worked on health-sector software, online subscription and payment platforms and data engineering, and I am now IT Project & Technical Leader at the Luxembourg Institute of Health.",
+        "With {years}+ years in software engineering, I combine deep technical expertise, architectural vision and a commitment to high-quality software. I have worked on health-sector software, online subscription and payment platforms and data engineering, and I am now IT Project & Technical Leader at the Luxembourg Institute of Health.",
         "I have kept evolving with the technology: from C# / .NET and Oracle, through ASP.NET and SQL Server, to Angular Micro Frontends, Java and Quarkus microservices, Keycloak and OpenShift. I design and build scalable applications, modern frontend architectures and robust backend systems.",
         "Beyond development, I care about technical excellence, reusable solutions and knowledge sharing. I coach colleagues, and I created Easy Mat UI, an open-source Angular Material library, so that data-heavy screens can be configured once and reused."
       ],
@@ -47,7 +47,7 @@
       "values": [
         { "title": "Passionate about engineering", "text": "I enjoy software engineering and I am motivated by complex technical challenges." },
         { "title": "Quality first", "text": "Clean, maintainable and scalable code, with quality procedures built into delivery." },
-        { "title": "Always learning", "text": "From .NET and Oracle to Angular, Quarkus and OpenShift: my stack has kept evolving since 2010." },
+        { "title": "Always learning", "text": "From .NET and Oracle to Angular, Quarkus and OpenShift: my stack has kept evolving." },
         { "title": "Proactive problem solving", "text": "I spot technical problems early and favour reusable solutions over one-off fixes." },
         { "title": "Technical ownership", "text": "Comfortable owning technical design, deployments and the delivery of an application." },
         { "title": "Collaboration & sharing", "text": "Coaching colleagues and sharing knowledge so that the whole team moves faster." }
@@ -138,7 +138,7 @@
       "caption": "Screenshot taken from the live demo"
     },
     "experience": {
-      "kicker": "Career since 2010",
+      "kicker": "Career",
       "title": "Professional experience",
       "intro": "{years}+ years, four organizations and a steady progression from data engineering to technical leadership.",
       "evolutionTitle": "Technical evolution",
