@@ -17,10 +17,10 @@ import { Skills } from '../sections/skills';
     @if (lang.c()) {
       <app-hero />
       <app-about />
+      <app-experience />
       <app-skills />
       <app-microfrontends />
       <app-easy-mat-ui />
-      <app-experience />
       <app-education />
       <app-contact />
     }

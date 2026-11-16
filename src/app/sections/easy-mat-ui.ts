@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../core/language.service';
 import { EASY_MAT_UI } from '../core/cv.data';
@@ -10,7 +10,7 @@ import { Reveal } from '../shared/reveal';
   selector: 'app-easy-mat-ui',
   imports: [TranslatePipe, Icon, Reveal],
   template: `
-    <section id="easymat" class="section section--alt">
+    <section id="easymat" class="section">
       <div class="container">
         <div class="panel card" appReveal>
           <div class="info">
@@ -23,7 +23,7 @@ import { Reveal } from '../shared/reveal';
 
             <h3>{{ 'content.easymat.featuresTitle' | translate }}</h3>
             <ul class="features">
-              @for (f of lang.c()?.easymat?.features; track f) {
+              @for (f of em()?.features; track f) {
                 <li><app-icon name="check" [size]="18" />{{ f }}</li>
               }
             </ul>
@@ -69,6 +69,16 @@ import { Reveal } from '../shared/reveal';
             <figcaption>{{ 'content.easymat.caption' | translate }}</figcaption>
           </figure>
         </div>
+
+        <h3 class="evidence-title">{{ 'content.easymat.evidenceTitle' | translate }}</h3>
+        <ul class="evidence">
+          @for (ev of em()?.evidence; track ev.title) {
+            <li class="card" appReveal>
+              <h4>{{ ev.title }}</h4>
+              <p>{{ ev.text }}</p>
+            </li>
+          }
+        </ul>
       </div>
     </section>
   `,
@@ -145,6 +155,42 @@ import { Reveal } from '../shared/reveal';
       font: 500 0.85rem/1.3 var(--font-mono);
       overflow-x: auto;
     }
+    .evidence-title {
+      margin: 2.5rem 0 1rem;
+      font: 600 0.8rem/1 var(--font-mono);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .evidence {
+      display: grid;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .evidence li {
+      padding: 1.1rem 1.25rem;
+    }
+    .evidence h4 {
+      margin: 0 0 0.3rem;
+      font-size: 1rem;
+    }
+    .evidence p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    @media (min-width: 40rem) {
+      .evidence {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 64rem) {
+      .evidence {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
     .shot {
       align-self: center;
       margin: 0;
@@ -180,7 +226,8 @@ import { Reveal } from '../shared/reveal';
   `,
 })
 export class EasyMatUi {
-  protected readonly lang = inject(LanguageService);
+  private readonly lang = inject(LanguageService);
+  protected readonly em = computed(() => this.lang.c()?.easymat);
   protected readonly theme = inject(ThemeService);
   protected readonly links = EASY_MAT_UI;
 }

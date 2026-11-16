@@ -222,3 +222,49 @@ html.theme-transition *::after {
   white-space: nowrap;
   border: 0;
 }
+
+/* ---------- Print: a clean, ink-friendly CV when printing or saving as PDF ---------- */
+@media print {
+  :root,
+  :root[data-theme='dark'],
+  :root[data-theme='light'] {
+    --bg: #fff;
+    --bg-alt: #fff;
+    --surface: #fff;
+    --surface-hover: #fff;
+    --border: #cfd3e0;
+    --text: #111;
+    --text-muted: #333;
+    --accent: #0b6b63;
+    --accent-2: #5443d1;
+    --on-accent: #fff;
+    --accent-soft: #eef2f7;
+    --glow: transparent;
+    --shadow: none;
+  }
+
+  app-header,
+  .skip,
+  .glow {
+    display: none !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .section {
+    padding-block: 1.25rem;
+    break-inside: auto;
+  }
+
+  .card,
+  .entry {
+    break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
+  }
+}

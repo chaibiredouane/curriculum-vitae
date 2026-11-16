@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Redouane Chaibi · Full Stack Developer & Technical Lead",
-    "description": "Redouane Chaibi: Full Stack Developer, Technical Lead and Angular & Microservices Architect. Angular Micro Frontends, Native Federation, Quarkus, Keycloak and creator of Easy Mat UI."
+    "title": "Redouane Chaibi · Senior Full Stack Developer & Technical Lead",
+    "description": "{years}+ years of experience building scalable software. Redouane Chaibi: Senior Full Stack Developer, Technical Lead and Software Architect. Angular Micro Frontends, Quarkus microservices, Keycloak, OpenShift and creator of Easy Mat UI."
   },
   "content": {
     "nav": {
@@ -20,47 +20,61 @@
     "hero": {
       "badge": "Technical Lead · Luxembourg Institute of Health",
       "hello": "Hi, I'm",
-      "role": "Full Stack Developer · Technical Lead · Angular & Microservices Architect",
-      "summary": "Software engineer and senior full stack developer for over 12 years. I design and build scalable web platforms: Angular Micro Frontends on the front, Quarkus microservices secured by Keycloak on the back, delivered through CI/CD on OpenShift.",
-      "ctaProjects": "Discover Easy Mat UI",
+      "role": "Senior Full Stack Developer | Technical Lead | Software Architect",
+      "headline": "{years}+ Years of Experience Building Scalable Software Solutions",
+      "summary": "Since 2010 I have designed and delivered applications from health-sector software to online customer journeys and research platforms. Today I lead technical design and delivery with Angular Micro Frontends, Quarkus microservices, Keycloak and CI/CD on OpenShift.",
+      "expertise": ["Angular", "Micro Frontends", "Native Federation", "Java · Quarkus", "Microservices", "SQL Server", "OpenShift"],
+      "leadership": "Architecture & technical leadership: Micro Frontend and microservices architectures, technical design, code quality and mentoring.",
+      "ctaExperience": "View my experience",
       "ctaContact": "Get in touch",
+      "easymatLabel": "Creator of Easy Mat UI",
+      "easymatText": "My open-source Angular Material library, published on npm.",
       "stats": [
-        { "value": "12+", "label": "Years of experience" },
-        { "value": "4", "label": "Organizations" },
-        { "value": "3", "label": "Languages spoken" }
+        { "value": "{years}+", "label": "Years of experience" },
+        { "value": "2010", "label": "Career started" },
+        { "value": "4", "label": "Organizations" }
       ]
     },
     "about": {
       "kicker": "Profile",
-      "title": "About me",
+      "title": "Professional introduction",
       "paragraphs": [
-        "I am a software engineer and technical lead based in Luxembourg. At the Luxembourg Institute of Health I lead the design and delivery of web applications, from sample traceability to data management and interoperability.",
-        "My work covers the whole stack: architecting Angular front ends, building Quarkus REST microservices, modelling SQL Server databases and automating delivery with Docker, Jenkins and OpenShift.",
-        "I care about reusable solutions, code quality and sharing what I know, through coaching colleagues and through my open-source Angular Material library, Easy Mat UI."
+        "With {years}+ years in software engineering, I combine deep technical expertise, architectural vision and a commitment to high-quality software. Since 2010 I have worked on health-sector software, online subscription and payment platforms and data engineering, and I am now IT Project & Technical Leader at the Luxembourg Institute of Health.",
+        "I have kept evolving with the technology: from C# / .NET and Oracle, through ASP.NET and SQL Server, to Angular Micro Frontends, Java and Quarkus microservices, Keycloak and OpenShift. I design and build scalable applications, modern frontend architectures and robust backend systems.",
+        "Beyond development, I care about technical excellence, reusable solutions and knowledge sharing. I coach colleagues, and I created Easy Mat UI, an open-source Angular Material library, so that data-heavy screens can be configured once and reused."
       ],
-      "highlights": [
-        { "title": "Architecture", "text": "Micro Frontends, microservices and multi-tenant platforms." },
-        { "title": "Leadership", "text": "Technical design, code quality, coaching and team collaboration." },
-        { "title": "Open source", "text": "Creator of Easy Mat UI, published on npm." }
+      "valuesTitle": "How I work",
+      "values": [
+        { "title": "Passionate about engineering", "text": "I enjoy software engineering and I am motivated by complex technical challenges." },
+        { "title": "Quality first", "text": "Clean, maintainable and scalable code, with quality procedures built into delivery." },
+        { "title": "Always learning", "text": "From .NET and Oracle to Angular, Quarkus and OpenShift: my stack has kept evolving since 2010." },
+        { "title": "Proactive problem solving", "text": "I spot technical problems early and favour reusable solutions over one-off fixes." },
+        { "title": "Technical ownership", "text": "Comfortable owning technical design, deployments and the delivery of an application." },
+        { "title": "Collaboration & sharing", "text": "Coaching colleagues and sharing knowledge so that the whole team moves faster." }
       ]
     },
     "skills": {
       "kicker": "Expertise",
       "title": "Technical skills",
-      "intro": "A full stack toolset, from the browser to the cluster.",
+      "intro": "Grouped by discipline, from the browser to the cluster.",
       "groups": {
-        "frontend": "Frontend",
-        "backend": "Backend",
+        "frontend": "Frontend Engineering",
+        "backend": "Backend Engineering",
+        "architecture": "Architecture",
         "database": "Database",
-        "devops": "DevOps & Infrastructure",
-        "architecture": "Architecture & Technical Leadership"
+        "devops": "DevOps",
+        "leadership": "Technical Leadership"
       },
       "architectureItems": [
         "Micro Frontend Architecture",
         "Microservices Architecture",
         "Multi-tenant applications",
-        "Role and Permission Management",
+        "Authentication and Authorization",
+        "Reusable software architectures"
+      ],
+      "leadershipItems": [
         "Technical architecture and design",
+        "Role and Permission Management",
         "Code quality and reusable solutions",
         "Team collaboration and technical mentoring"
       ]
@@ -107,6 +121,15 @@
         "Dark and light themes",
         "Reusable configuration-driven components"
       ],
+      "evidenceTitle": "What it shows",
+      "evidence": [
+        { "title": "Technical initiative", "text": "Conceived, built and published as an open-source package on npm." },
+        { "title": "Software design", "text": "One typed configuration object drives tables, filters, dialogs and child tables." },
+        { "title": "Reusable architecture", "text": "Configuration-driven components that adapt to each project's data." },
+        { "title": "Independent product development", "text": "Owned end to end: design, implementation, documentation, demo site and releases." },
+        { "title": "Problem solving", "text": "Removes the repeated work of rebuilding data tables in every project." },
+        { "title": "Angular ecosystem", "text": "Built on Angular Material and compatible with Angular 20 and later." }
+      ],
       "github": "GitHub repository",
       "npm": "npm package",
       "demo": "Live demo",
@@ -115,9 +138,18 @@
       "caption": "Screenshot taken from the live demo"
     },
     "experience": {
-      "kicker": "Career",
+      "kicker": "Career since 2010",
       "title": "Professional experience",
-      "stack": "Technical background",
+      "intro": "{years}+ years, four organizations and a steady progression from data engineering to technical leadership.",
+      "evolutionTitle": "Technical evolution",
+      "evolution": [
+        { "period": "2010", "title": "Data engineering", "text": "Java, SQL, ETL and PostgreSQL: an indexing system and its database." },
+        { "period": "2010 – 2017", "title": "Health-sector software", "text": "C# / .NET, Oracle, HL7 and CDA interoperability, secure messaging." },
+        { "period": "2017 – 2019", "title": "Web platforms", "text": "ASP.NET and SQL Server: online subscription, e-signature and online payment." },
+        { "period": "2020 – today", "title": "Architecture & leadership", "text": "Angular Micro Frontends, Quarkus microservices, Keycloak, CI/CD on OpenShift." }
+      ],
+      "tasks": "Key responsibilities & contributions",
+      "stack": "Technologies & tools",
       "current": "Current",
       "show": "Show details",
       "hide": "Hide details",
@@ -125,57 +157,61 @@
         {
           "title": "IT Project & Technical Leader",
           "date": "January 2020 – Present",
+          "summary": "Leads technical design and delivery of web applications, from a sample traceability tool to the migration of microservices to Quarkus, while coordinating deployments and coaching colleagues.",
           "tasks": [
-            "Development and design of a sample traceability tool",
-            "Migration of Spring Boot microservices applications to Quarkus",
-            "Data Management",
-            "Identifying standard frameworks and/or methodologies to increase data quality in software development activities and linking data governance efforts to technology developments",
-            "IT Project - Interoperability Specialist",
-            "Participation in the implementation of the CI/CD part",
-            "Use of Atlassian tools for daily tasks and production of requested documents (JIRA, SMS, WIKI)",
-            "Perform / coordinate deployments to each environment within the development lifecycle",
-            "Provide training and coaching on supported software engineering technologies",
-            "Enhance and maintain current applications from a standpoint of performance, scalability, and reliability",
-            "Participate in the quality system procedures implementation and its validation process"
+            "Designed and developed a sample traceability tool",
+            "Migrated Spring Boot microservices applications to Quarkus",
+            "Handled data management activities",
+            "Identified standard frameworks and/or methodologies to increase data quality in software development activities and linked data governance efforts to technology developments",
+            "Worked as IT project lead and interoperability specialist",
+            "Contributed to the implementation of the CI/CD part",
+            "Used Atlassian tools (JIRA, SMS, WIKI) for daily tasks and produced the requested documents",
+            "Coordinated and performed deployments to each environment of the development lifecycle",
+            "Mentored and coached colleagues on the supported software engineering technologies",
+            "Improved and maintained current applications from a standpoint of performance, scalability and reliability",
+            "Contributed to the implementation of the quality system procedures and their validation process"
           ]
         },
         {
           "title": "Software Engineer – Project Manager",
           "date": "July 2017 – December 2019",
+          "summary": "Delivered a paperless online customer journey covering subscription, electronic signature and online payment, with automated follow-up of incomplete or unpaid files.",
           "tasks": [
-            "Establishment of an online subscription process (paperless customer journey)",
-            "Development and implementation of a database monitoring tool",
-            "Implementation of the electronic signature",
-            "Implementation of an online payment solution",
-            "Implementation of commercial offers",
-            "Automation of reminders on incomplete / unpaid files"
+            "Implemented an online subscription process (paperless customer journey)",
+            "Developed and implemented a database monitoring tool",
+            "Implemented the electronic signature",
+            "Implemented an online payment solution",
+            "Implemented commercial offers",
+            "Automated reminders on incomplete / unpaid files"
           ]
         },
         {
           "title": "Software Engineer",
           "date": "August 2010 – July 2017",
+          "summary": "Seven years building health-information software: secure messaging, healthcare-professional directory updates, electronic archiving and HL7 / CDA interoperability interfaces.",
           "tasks": [
-            "Development of secure messaging MSS, APICRYPT",
-            "Development of an application that updates the information of health professionals registered in the Shared Directory of Health Professionals (RPPS)",
-            "Implementation of an electronic filing system (ESA) and database load shedding",
-            "Crystal Report integration in Dx Care",
-            "Participation in the PASS project (Health Sector Support Program)",
-            "Development / adaptation of Web Intelligence documents",
-            "Participation in the research project RAVEL (Research and Visualization of information in the electronic patient file)",
-            "Corrections / evolutions on a product of administrative management of the patients",
-            "Development of IHE LAB HL7 v2 interfaces",
-            "Development of HL7 v3 CDA R2 interfaces (Clinical Document Architecture)"
+            "Developed secure messaging MSS, APICRYPT",
+            "Developed an application that updates the information of health professionals registered in the Shared Directory of Health Professionals (RPPS)",
+            "Implemented an electronic filing system (ESA) and database load shedding",
+            "Integrated Crystal Report in Dx Care",
+            "Participated in the PASS project (Health Sector Support Program)",
+            "Developed and adapted Web Intelligence documents",
+            "Participated in the research project RAVEL (Research and Visualization of information in the electronic patient file)",
+            "Fixed and evolved a product for the administrative management of patients",
+            "Developed IHE LAB HL7 v2 interfaces",
+            "Developed HL7 v3 CDA R2 interfaces (Clinical Document Architecture)"
           ]
         },
         {
           "title": "Data Engineer",
           "date": "February 2010 – August 2010",
+          "summary": "Designed the database and ETL behind a bibliographic indexing system and search engine.",
           "tasks": [
-            "Study and implementation of an indexing system",
-            "Bibliography data mining, indexing system, search engine",
-            "Requirements specification",
-            "Design and realization of a database",
-            "Development of an ETL"
+            "Studied and implemented an indexing system",
+            "Worked on bibliography data mining, the indexing system and the search engine",
+            "Specified the requirements",
+            "Designed and built a database",
+            "Developed an ETL"
           ]
         }
       ]

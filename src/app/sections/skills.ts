@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../core/language.service';
 import { SKILL_GROUPS } from '../core/cv.data';
@@ -6,11 +6,17 @@ import { Icon } from '../shared/icon';
 import { Reveal } from '../shared/reveal';
 import { SectionHeading } from '../shared/section-heading';
 
+interface Group {
+  key: string;
+  icon: string;
+  items: string[];
+}
+
 @Component({
   selector: 'app-skills',
   imports: [TranslatePipe, SectionHeading, Icon, Reveal],
   template: `
-    <section id="skills" class="section section--alt">
+    <section id="skills" class="section">
       <div class="container">
         <app-section-heading
           [kicker]="'content.skills.kicker' | translate"
@@ -18,28 +24,18 @@ import { SectionHeading } from '../shared/section-heading';
           [intro]="'content.skills.intro' | translate"
         />
         <div class="grid">
-          @for (g of groups; track g.key) {
+          @for (g of groups(); track g.key) {
             <article class="card group" appReveal>
               <h3>
                 <app-icon [name]="g.icon" />{{ 'content.skills.groups.' + g.key | translate }}
               </h3>
-              <ul class="chips">
+              <ul>
                 @for (item of g.items; track item) {
-                  <li class="chip">{{ item }}</li>
+                  <li>{{ item }}</li>
                 }
               </ul>
             </article>
           }
-          <article class="card group wide" appReveal>
-            <h3>
-              <app-icon name="layout" />{{ 'content.skills.groups.architecture' | translate }}
-            </h3>
-            <ul class="checks">
-              @for (item of lang.c()?.skills?.architectureItems; track item) {
-                <li><app-icon name="check" [size]="18" />{{ item }}</li>
-              }
-            </ul>
-          </article>
         </div>
       </div>
     </section>
@@ -56,49 +52,59 @@ import { SectionHeading } from '../shared/section-heading';
       display: flex;
       align-items: center;
       gap: 0.6rem;
-      margin: 0 0 1.1rem;
+      margin: 0 0 1rem;
       font-size: 1.1rem;
     }
     h3 app-icon {
       color: var(--accent);
     }
-    .chips,
-    .checks {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
+    ul {
       margin: 0;
       padding: 0;
       list-style: none;
     }
-    .checks {
-      display: grid;
-      gap: 0.7rem 2rem;
-    }
-    .checks li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.6rem;
+    li {
+      position: relative;
+      padding-block: 0.3rem;
+      padding-inline-start: 1.1rem;
       color: var(--text-muted);
     }
-    .checks app-icon {
-      margin-block-start: 0.2rem;
-      color: var(--accent);
+    li::before {
+      content: '';
+      position: absolute;
+      inset-inline-start: 0;
+      inset-block-start: 0.85rem;
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      background: var(--gradient);
     }
     @media (min-width: 48rem) {
       .grid {
         grid-template-columns: repeat(2, 1fr);
       }
-      .wide {
-        grid-column: 1 / -1;
-      }
-      .checks {
-        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 64rem) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   `,
 })
 export class Skills {
-  protected readonly lang = inject(LanguageService);
-  protected readonly groups = SKILL_GROUPS;
+  private readonly lang = inject(LanguageService);
+
+  /** Frontend, backend, architecture, database, DevOps and leadership, in recruiter-priority order. */
+  protected readonly groups = computed<Group[]>(() => {
+    const skills = this.lang.c()?.skills;
+    const tech = (key: string) => SKILL_GROUPS.find((g) => g.key === key)?.items ?? [];
+    return [
+      { key: 'frontend', icon: 'layout', items: tech('frontend') },
+      { key: 'backend', icon: 'server', items: tech('backend') },
+      { key: 'architecture', icon: 'globe', items: skills?.architectureItems ?? [] },
+      { key: 'database', icon: 'database', items: tech('database') },
+      { key: 'devops', icon: 'cloud', items: tech('devops') },
+      { key: 'leadership', icon: 'check', items: skills?.leadershipItems ?? [] },
+    ];
+  });
 }

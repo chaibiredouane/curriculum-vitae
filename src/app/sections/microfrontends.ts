@@ -8,7 +8,7 @@ import { SectionHeading } from '../shared/section-heading';
   selector: 'app-microfrontends',
   imports: [TranslatePipe, SectionHeading, Reveal],
   template: `
-    <section id="microfrontends" class="section">
+    <section id="microfrontends" class="section section--alt">
       <div class="container">
         <app-section-heading
           [kicker]="'content.mfe.kicker' | translate"

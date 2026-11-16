@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Redouane Chaibi · Développeur Full Stack & Lead technique",
-    "description": "Redouane Chaibi : développeur Full Stack, Lead technique et architecte Angular & microservices. Micro Frontends Angular, Native Federation, Quarkus, Keycloak et créateur d'Easy Mat UI."
+    "title": "Redouane Chaibi · Développeur Full Stack senior & Lead technique",
+    "description": "{years}+ ans d'expérience dans la conception de logiciels évolutifs. Redouane Chaibi : développeur Full Stack senior, Lead technique et architecte logiciel. Micro Frontends Angular, microservices Quarkus, Keycloak, OpenShift et créateur d'Easy Mat UI."
   },
   "content": {
     "nav": {
@@ -20,47 +20,61 @@
     "hero": {
       "badge": "Lead technique · Luxembourg Institute of Health",
       "hello": "Bonjour, je suis",
-      "role": "Développeur Full Stack · Lead technique · Architecte Angular & microservices",
-      "summary": "Ingénieur logiciel et développeur senior full stack depuis plus de 12 ans. Je conçois et réalise des plateformes web évolutives : Micro Frontends Angular côté front, microservices Quarkus sécurisés par Keycloak côté back, livrés via CI/CD sur OpenShift.",
-      "ctaProjects": "Découvrir Easy Mat UI",
+      "role": "Développeur Full Stack senior | Lead technique | Architecte logiciel",
+      "headline": "{years}+ ans d'expérience dans la conception de solutions logicielles évolutives",
+      "summary": "Depuis 2010, je conçois et livre des applications, des logiciels du secteur de la santé aux parcours clients en ligne et aux plateformes de recherche. Aujourd'hui, je pilote la conception technique et la livraison avec des Micro Frontends Angular, des microservices Quarkus, Keycloak et du CI/CD sur OpenShift.",
+      "expertise": ["Angular", "Micro Frontends", "Native Federation", "Java · Quarkus", "Microservices", "SQL Server", "OpenShift"],
+      "leadership": "Architecture et leadership technique : architectures Micro Frontend et microservices, conception technique, qualité du code et mentorat.",
+      "ctaExperience": "Voir mon expérience",
       "ctaContact": "Me contacter",
+      "easymatLabel": "Créateur d'Easy Mat UI",
+      "easymatText": "Ma bibliothèque open source Angular Material, publiée sur npm.",
       "stats": [
-        { "value": "12+", "label": "Années d'expérience" },
-        { "value": "4", "label": "Organisations" },
-        { "value": "3", "label": "Langues parlées" }
+        { "value": "{years}+", "label": "Années d'expérience" },
+        { "value": "2010", "label": "Début de carrière" },
+        { "value": "4", "label": "Organisations" }
       ]
     },
     "about": {
       "kicker": "Profil",
-      "title": "À propos",
+      "title": "Présentation professionnelle",
       "paragraphs": [
-        "Je suis ingénieur logiciel et lead technique, basé au Luxembourg. Au Luxembourg Institute of Health, je pilote la conception et la livraison d'applications web, de la traçabilité des échantillons à la gestion des données et à l'interopérabilité.",
-        "Mon travail couvre toute la pile : architecture de front ends Angular, microservices REST Quarkus, modélisation de bases SQL Server et automatisation de la livraison avec Docker, Jenkins et OpenShift.",
-        "J'attache de l'importance aux solutions réutilisables, à la qualité du code et au partage des connaissances, par le coaching de mes collègues et par ma bibliothèque open source Angular Material, Easy Mat UI."
+        "Avec {years}+ ans d'expérience en ingénierie logicielle, j'allie expertise technique, vision d'architecte et exigence de qualité. Depuis 2010, j'ai travaillé sur des logiciels du secteur de la santé, des plateformes de souscription et de paiement en ligne et de l'ingénierie de données ; je suis aujourd'hui Chef de projet & Technical Leader au Luxembourg Institute of Health.",
+        "J'ai évolué en continu avec les technologies : de C# / .NET et Oracle, en passant par ASP.NET et SQL Server, jusqu'aux Micro Frontends Angular, aux microservices Java et Quarkus, à Keycloak et à OpenShift. Je conçois et développe des applications évolutives, des architectures frontend modernes et des systèmes backend robustes.",
+        "Au-delà du développement, j'accorde de l'importance à l'excellence technique, aux solutions réutilisables et au partage des connaissances. J'accompagne mes collègues et j'ai créé Easy Mat UI, une bibliothèque open source Angular Material, pour configurer une fois et réutiliser les écrans riches en données."
       ],
-      "highlights": [
-        { "title": "Architecture", "text": "Micro Frontends, microservices et plateformes multi-tenant." },
-        { "title": "Leadership", "text": "Conception technique, qualité du code, coaching et collaboration d'équipe." },
-        { "title": "Open source", "text": "Créateur d'Easy Mat UI, publié sur npm." }
+      "valuesTitle": "Ma façon de travailler",
+      "values": [
+        { "title": "Passionné d'ingénierie", "text": "J'aime l'ingénierie logicielle et les défis techniques complexes me motivent." },
+        { "title": "La qualité d'abord", "text": "Un code propre, maintenable et évolutif, avec des procédures qualité intégrées à la livraison." },
+        { "title": "Toujours en apprentissage", "text": "De .NET et Oracle à Angular, Quarkus et OpenShift : ma pile technique évolue depuis 2010." },
+        { "title": "Résolution proactive", "text": "Je repère tôt les problèmes techniques et privilégie les solutions réutilisables aux correctifs ponctuels." },
+        { "title": "Responsabilité technique", "text": "À l'aise pour porter la conception technique, les déploiements et la livraison d'une application." },
+        { "title": "Collaboration & partage", "text": "J'accompagne mes collègues et partage mes connaissances pour que toute l'équipe avance plus vite." }
       ]
     },
     "skills": {
       "kicker": "Expertise",
       "title": "Compétences techniques",
-      "intro": "Une boîte à outils full stack, du navigateur au cluster.",
+      "intro": "Regroupées par discipline, du navigateur au cluster.",
       "groups": {
-        "frontend": "Frontend",
-        "backend": "Backend",
+        "frontend": "Ingénierie Frontend",
+        "backend": "Ingénierie Backend",
+        "architecture": "Architecture",
         "database": "Base de données",
-        "devops": "DevOps & Infrastructure",
-        "architecture": "Architecture & Leadership technique"
+        "devops": "DevOps",
+        "leadership": "Leadership technique"
       },
       "architectureItems": [
         "Architecture Micro Frontend",
         "Architecture microservices",
         "Applications multi-tenant",
-        "Gestion des rôles et des permissions",
+        "Authentification et autorisation",
+        "Architectures logicielles réutilisables"
+      ],
+      "leadershipItems": [
         "Architecture et conception technique",
+        "Gestion des rôles et des permissions",
         "Qualité du code et solutions réutilisables",
         "Collaboration d'équipe et mentorat technique"
       ]
@@ -107,6 +121,15 @@
         "Thèmes sombre et clair",
         "Composants réutilisables pilotés par la configuration"
       ],
+      "evidenceTitle": "Ce que cela démontre",
+      "evidence": [
+        { "title": "Esprit d'initiative", "text": "Conçue, développée et publiée comme package open source sur npm." },
+        { "title": "Conception logicielle", "text": "Un seul objet de configuration typé pilote tableaux, filtres, dialogues et tableaux enfants." },
+        { "title": "Architecture réutilisable", "text": "Des composants pilotés par la configuration, adaptés aux données de chaque projet." },
+        { "title": "Développement de produit autonome", "text": "Pris en charge de bout en bout : conception, implémentation, documentation, site de démo et versions." },
+        { "title": "Résolution de problèmes", "text": "Supprime le travail répétitif de reconstruction des tableaux de données dans chaque projet." },
+        { "title": "Écosystème Angular", "text": "Construite sur Angular Material et compatible avec Angular 20 et suivants." }
+      ],
       "github": "Dépôt GitHub",
       "npm": "Package npm",
       "demo": "Démo en ligne",
@@ -115,9 +138,18 @@
       "caption": "Capture d'écran de la démo en ligne"
     },
     "experience": {
-      "kicker": "Parcours",
+      "kicker": "Carrière depuis 2010",
       "title": "Expérience professionnelle",
-      "stack": "Environnement technique",
+      "intro": "{years}+ ans, quatre organisations et une progression constante de l'ingénierie de données au leadership technique.",
+      "evolutionTitle": "Évolution technique",
+      "evolution": [
+        { "period": "2010", "title": "Ingénierie de données", "text": "Java, SQL, ETL et PostgreSQL : un système d'indexation et sa base de données." },
+        { "period": "2010 – 2017", "title": "Logiciels du secteur santé", "text": "C# / .NET, Oracle, interopérabilité HL7 et CDA, messagerie sécurisée." },
+        { "period": "2017 – 2019", "title": "Plateformes web", "text": "ASP.NET et SQL Server : souscription en ligne, signature électronique et paiement en ligne." },
+        { "period": "2020 – aujourd'hui", "title": "Architecture & leadership", "text": "Micro Frontends Angular, microservices Quarkus, Keycloak, CI/CD sur OpenShift." }
+      ],
+      "tasks": "Responsabilités et contributions clés",
+      "stack": "Technologies et outils",
       "current": "En cours",
       "show": "Voir le détail",
       "hide": "Masquer le détail",
@@ -125,57 +157,61 @@
         {
           "title": "Chef de projet & Technical Leader",
           "date": "Janvier 2020 – Actuel",
+          "summary": "Pilote la conception technique et la livraison d'applications web, d'un outil de traçabilité des échantillons à la migration de microservices vers Quarkus, tout en coordonnant les déploiements et en accompagnant ses collègues.",
           "tasks": [
-            "Développement et conception d'un outil de traçabilité des échantillons",
-            "Migration des applications de microservices Spring Boot vers Quarkus",
-            "Data Management",
-            "Mettre en œuvre des processus de gestion sémantique des métadonnées",
-            "Chef de projet - Spécialiste de l'interopérabilité",
-            "Participation à la mise en place de la partie CI/CD",
-            "Utilisation des outils Atlassian pour les tâches quotidiennes et production des documents demandés (JIRA, SMS, WIKI)",
-            "Effectuer/coordonner les déploiements dans chaque environnement au cours du cycle de développement",
-            "Assurer la formation et le coaching sur les technologies utilisées",
-            "Améliorer et maintenir les applications actuelles du point de vue des performances, de l'évolutivité et de la fiabilité",
-            "Participer à la mise en place des procédures du système qualité et à son processus de validation"
+            "Conçu et développé un outil de traçabilité des échantillons",
+            "Migré les applications de microservices Spring Boot vers Quarkus",
+            "Assuré des activités de Data Management",
+            "Mis en œuvre des processus de gestion sémantique des métadonnées",
+            "Occupé le rôle de chef de projet et spécialiste de l'interopérabilité",
+            "Participé à la mise en place de la partie CI/CD",
+            "Utilisé les outils Atlassian (JIRA, SMS, WIKI) au quotidien et produit les documents demandés",
+            "Coordonné et effectué les déploiements dans chaque environnement du cycle de développement",
+            "Assuré le mentorat et le coaching sur les technologies utilisées",
+            "Amélioré et maintenu les applications actuelles du point de vue des performances, de l'évolutivité et de la fiabilité",
+            "Participé à la mise en place des procédures du système qualité et à son processus de validation"
           ]
         },
         {
           "title": "Ingénieur logiciel – Chef de projet",
           "date": "Juillet 2017 – Décembre 2019",
+          "summary": "A livré un parcours client en ligne sans papier couvrant la souscription, la signature électronique et le paiement en ligne, avec relance automatique des dossiers incomplets ou impayés.",
           "tasks": [
-            "Mise en place d'un parcours de souscription en ligne (parcours client sans papier)",
-            "Développement et mise en place d'un outil de monitoring de base de données",
-            "Mise en place de la signature électronique",
-            "Mise en place d'une solution de paiement en ligne",
-            "Mise en place d'un système d'offre commerciale dynamique et adaptable",
-            "Automatisation des relances sur dossiers incomplets / impayés"
+            "Mis en place un parcours de souscription en ligne (parcours client sans papier)",
+            "Développé et mis en place un outil de monitoring de base de données",
+            "Mis en place la signature électronique",
+            "Mis en place une solution de paiement en ligne",
+            "Mis en place un système d'offre commerciale dynamique et adaptable",
+            "Automatisé les relances sur dossiers incomplets / impayés"
           ]
         },
         {
           "title": "Ingénieur logiciel - Chef de projet",
           "date": "Août 2010 – Juillet 2017",
+          "summary": "Sept ans de développement de logiciels d'information de santé : messagerie sécurisée, mise à jour de l'annuaire des professionnels de santé, archivage électronique et interfaces d'interopérabilité HL7 / CDA.",
           "tasks": [
-            "Développement de messagerie sécurisée MSS, APICRYPT",
-            "Développement d'une application qui met à jour les informations des professionnels de santé inscrits au Répertoire Partagé des Professionnels de Santé (RPPS)",
-            "Mise en place d'un système d'archivage électronique (ESA) et d'un délestage de la base de données",
-            "Intégration de Crystal Report dans Dx Care",
-            "Participation au projet PASS (Programme d'Appui au Secteur Santé)",
-            "Développement / adaptation de documents Web Intelligence",
-            "Participation au projet de recherche RAVEL (Recherche et Visualisation des informations dans le dossier électronique du patient)",
-            "Corrections/évolutions sur un produit de gestion administrative des patients",
-            "Développement des interfaces IHE LAB HL7 v2",
-            "Développement des interfaces HL7 v3 CDA R2 (Clinical Document Architecture)"
+            "Développé la messagerie sécurisée MSS, APICRYPT",
+            "Développé une application qui met à jour les informations des professionnels de santé inscrits au Répertoire Partagé des Professionnels de Santé (RPPS)",
+            "Mis en place un système d'archivage électronique (ESA) et un délestage de la base de données",
+            "Intégré Crystal Report dans Dx Care",
+            "Participé au projet PASS (Programme d'Appui au Secteur Santé)",
+            "Développé et adapté des documents Web Intelligence",
+            "Participé au projet de recherche RAVEL (Recherche et Visualisation des informations dans le dossier électronique du patient)",
+            "Corrigé et fait évoluer un produit de gestion administrative des patients",
+            "Développé les interfaces IHE LAB HL7 v2",
+            "Développé les interfaces HL7 v3 CDA R2 (Clinical Document Architecture)"
           ]
         },
         {
           "title": "Ingénieur de données",
           "date": "Février 2010 – Août 2010",
+          "summary": "A conçu la base de données et l'ETL d'un système d'indexation bibliographique et de son moteur de recherche.",
           "tasks": [
-            "Étude et mise en place d'un système d'indexation",
-            "Fouille de données bibliographiques, système d'indexation, moteur de recherche",
-            "Spécification des exigences",
-            "Conception et réalisation d'une base de données",
-            "Développement d'un ETL"
+            "Étudié et mis en place un système d'indexation",
+            "Travaillé sur la fouille de données bibliographiques, le système d'indexation et le moteur de recherche",
+            "Spécifié les exigences",
+            "Conçu et réalisé une base de données",
+            "Développé un ETL"
           ]
         }
       ]

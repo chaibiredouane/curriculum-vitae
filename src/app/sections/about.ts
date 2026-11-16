@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../core/language.service';
 import { Reveal } from '../shared/reveal';
@@ -14,28 +14,27 @@ import { SectionHeading } from '../shared/section-heading';
           [kicker]="'content.about.kicker' | translate"
           [title]="'content.about.title' | translate"
         />
-        <div class="layout">
-          <div class="text" appReveal>
-            @for (p of lang.c()?.about?.paragraphs; track $index) {
-              <p>{{ p }}</p>
-            }
-          </div>
-          <ul class="highlights">
-            @for (h of lang.c()?.about?.highlights; track h.title) {
-              <li class="card" appReveal>
-                <h3>{{ h.title }}</h3>
-                <p>{{ h.text }}</p>
-              </li>
-            }
-          </ul>
+        <div class="text" appReveal>
+          @for (p of about()?.paragraphs; track $index) {
+            <p>{{ p }}</p>
+          }
         </div>
+
+        <h3 class="values-title">{{ 'content.about.valuesTitle' | translate }}</h3>
+        <ul class="values">
+          @for (v of about()?.values; track v.title) {
+            <li class="card" appReveal>
+              <h4>{{ v.title }}</h4>
+              <p>{{ v.text }}</p>
+            </li>
+          }
+        </ul>
       </div>
     </section>
   `,
   styles: `
-    .layout {
-      display: grid;
-      gap: 2rem;
+    .text {
+      max-width: 52rem;
     }
     .text p {
       margin: 0 0 1.1rem;
@@ -43,18 +42,29 @@ import { SectionHeading } from '../shared/section-heading';
       font-size: 1.08rem;
       line-height: 1.75;
     }
-    .highlights {
+    .text p:first-child {
+      color: var(--text);
+      font-size: 1.18rem;
+    }
+    .values-title {
+      margin: 2.5rem 0 1.25rem;
+      font: 600 0.8rem/1 var(--font-mono);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .values {
       display: grid;
       gap: 1rem;
       margin: 0;
       padding: 0;
       list-style: none;
     }
-    .highlights li {
+    .values li {
       padding: 1.25rem 1.4rem;
       border-inline-start: 3px solid var(--accent);
     }
-    h3 {
+    h4 {
       margin: 0 0 0.35rem;
       font-size: 1.05rem;
     }
@@ -63,14 +73,19 @@ import { SectionHeading } from '../shared/section-heading';
       color: var(--text-muted);
       font-size: 0.95rem;
     }
-    @media (min-width: 60rem) {
-      .layout {
-        grid-template-columns: 1.2fr 0.8fr;
-        gap: 4rem;
+    @media (min-width: 40rem) {
+      .values {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 64rem) {
+      .values {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   `,
 })
 export class About {
-  protected readonly lang = inject(LanguageService);
+  private readonly lang = inject(LanguageService);
+  protected readonly about = computed(() => this.lang.c()?.about);
 }

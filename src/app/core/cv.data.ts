@@ -16,45 +16,34 @@ export const EASY_MAT_UI = {
 
 export interface SkillGroup {
   key: 'frontend' | 'backend' | 'database' | 'devops';
-  icon: string;
   items: string[];
 }
 
+/** Technology lists of the skills section; the architecture and leadership lists are translated texts. */
 export const SKILL_GROUPS: SkillGroup[] = [
   {
     key: 'frontend',
-    icon: 'layout',
     items: [
       'Angular',
-      'Angular Micro Frontends',
-      'Native Federation',
-      'Angular Material',
       'TypeScript',
       'RxJS',
+      'Angular Material',
+      'Micro Frontends',
+      'Native Federation',
       'Reusable component libraries',
       'Responsive UI development',
     ],
   },
   {
     key: 'backend',
-    icon: 'server',
-    items: [
-      'Java',
-      'Quarkus',
-      'REST APIs',
-      'Microservices architecture',
-      'Authentication and authorization',
-      'Keycloak',
-    ],
+    items: ['Java', 'Quarkus', 'REST APIs', 'Microservices', 'Keycloak'],
   },
   {
     key: 'database',
-    icon: 'database',
-    items: ['Microsoft SQL Server', 'Database architecture', 'Data modeling', 'SQL optimization'],
+    items: ['Microsoft SQL Server', 'Data modeling', 'Database design', 'SQL optimization'],
   },
   {
     key: 'devops',
-    icon: 'cloud',
     items: ['Docker', 'Kubernetes', 'OpenShift', 'Jenkins', 'CI/CD', 'Git and GitHub'],
   },
 ];
@@ -193,10 +182,10 @@ export const SCHOOL_LINKS = [
 
 export const NAV_ITEMS = [
   'about',
+  'experience',
   'skills',
   'microfrontends',
   'easymat',
-  'experience',
   'education',
   'contact',
 ] as const;

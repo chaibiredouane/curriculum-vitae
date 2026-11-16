@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../core/language.service';
@@ -18,12 +18,22 @@ import { Icon } from '../shared/icon';
           </p>
           <p class="hello">{{ 'content.hero.hello' | translate }}</p>
           <h1 id="hero-title">{{ name }}</h1>
-          <p class="role">{{ 'content.hero.role' | translate }}</p>
-          <p class="summary">{{ 'content.hero.summary' | translate }}</p>
+          <p class="role">{{ hero()?.role }}</p>
+          <p class="headline">{{ hero()?.headline }}</p>
+          <p class="summary">{{ hero()?.summary }}</p>
+
+          <ul class="expertise" aria-label="Expertise">
+            @for (e of hero()?.expertise; track e) {
+              <li class="chip">{{ e }}</li>
+            }
+          </ul>
+          <p class="leadership">
+            <app-icon name="check" [size]="18" />{{ 'content.hero.leadership' | translate }}
+          </p>
 
           <div class="actions">
-            <a class="btn btn--primary" routerLink="/cv" fragment="easymat">
-              {{ 'content.hero.ctaProjects' | translate }}
+            <a class="btn btn--primary" routerLink="/cv" fragment="experience">
+              {{ 'content.hero.ctaExperience' | translate }}
             </a>
             <a class="btn" routerLink="/cv" fragment="contact">
               <app-icon name="mail" [size]="18" />{{ 'content.hero.ctaContact' | translate }}
@@ -31,7 +41,7 @@ import { Icon } from '../shared/icon';
           </div>
 
           <dl class="stats">
-            @for (s of lang.c()?.hero?.stats; track s.label) {
+            @for (s of hero()?.stats; track s.label) {
               <div>
                 <dt>{{ s.label }}</dt>
                 <dd>{{ s.value }}</dd>
@@ -40,16 +50,17 @@ import { Icon } from '../shared/icon';
           </dl>
         </div>
 
-        <div class="portrait" aria-hidden="false">
+        <div class="portrait">
           <div class="frame">
             <img [src]="photo" [alt]="name" width="480" height="480" fetchpriority="high" />
           </div>
-          <ul class="floating" aria-hidden="true">
-            <li>Angular</li>
-            <li>Quarkus</li>
-            <li>Keycloak</li>
-            <li>OpenShift</li>
-          </ul>
+          <a class="easymat" routerLink="/cv" fragment="easymat">
+            <span class="em-icon"><app-icon name="layout" [size]="20" /></span>
+            <span>
+              <strong>{{ 'content.hero.easymatLabel' | translate }}</strong>
+              <small>{{ 'content.hero.easymatText' | translate }}</small>
+            </span>
+          </a>
         </div>
       </div>
     </section>
@@ -180,57 +191,75 @@ import { Icon } from '../shared/icon';
       border-radius: 1.6rem;
       transform: rotate(-2deg) scale(1.04);
     }
-    .floating {
-      position: absolute;
-      inset: 0;
-      margin: 0;
+    .headline {
+      max-width: 38rem;
+      margin: 1rem 0 0;
+      font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+      font-weight: 700;
+      line-height: 1.35;
+      color: var(--accent);
+    }
+    .expertise {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1.25rem 0 0;
       padding: 0;
       list-style: none;
-      pointer-events: none;
     }
-    .floating li {
-      position: absolute;
-      padding: 0.35rem 0.75rem;
+    .leadership {
+      display: flex;
+      gap: 0.5rem;
+      align-items: flex-start;
+      max-width: 38rem;
+      margin: 1rem 0 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .leadership app-icon {
+      margin-block-start: 0.15rem;
+      color: var(--accent);
+    }
+    .easymat {
+      display: flex;
+      gap: 0.85rem;
+      align-items: center;
+      margin-block-start: 1.25rem;
+      padding: 0.9rem 1rem;
       border: 1px solid var(--border);
-      border-radius: 999px;
+      border-radius: var(--radius);
       background: var(--surface);
       box-shadow: var(--shadow);
-      font: 600 0.75rem/1 var(--font-mono);
-      animation: float 6s ease-in-out infinite;
+      color: var(--text);
+      text-decoration: none;
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
     }
-    .floating li:nth-child(1) {
-      inset: 6% auto auto 2%;
+    .easymat:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
     }
-    .floating li:nth-child(2) {
-      inset: 22% 2% auto auto;
-      animation-delay: -1.5s;
+    .em-icon {
+      display: grid;
+      flex: none;
+      place-items: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.7rem;
+      background: var(--gradient);
+      color: var(--on-accent);
     }
-    .floating li:nth-child(3) {
-      inset: auto auto 24% 2%;
-      animation-delay: -3s;
+    .easymat strong,
+    .easymat small {
+      display: block;
     }
-    .floating li:nth-child(4) {
-      inset: auto 2% 6% auto;
-      animation-delay: -4.5s;
-    }
-    @keyframes float {
-      50% {
-        transform: translateY(-8px);
-      }
+    .easymat small {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      line-height: 1.35;
     }
     @media (min-width: 60rem) {
-      .floating li:nth-child(1) {
-        left: -6%;
-      }
-      .floating li:nth-child(2) {
-        right: -8%;
-      }
-      .floating li:nth-child(3) {
-        left: -8%;
-      }
-      .floating li:nth-child(4) {
-        right: -4%;
-      }
       .grid {
         grid-template-columns: 1.25fr 0.75fr;
         gap: 4rem;
@@ -239,7 +268,8 @@ import { Icon } from '../shared/icon';
   `,
 })
 export class Hero {
-  protected readonly lang = inject(LanguageService);
+  private readonly lang = inject(LanguageService);
+  protected readonly hero = computed(() => this.lang.c()?.hero);
   protected readonly name = PROFILE.name;
   protected readonly photo = PROFILE.photo;
 }

@@ -4,6 +4,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import type { Content } from './content.model';
+import { withYears } from './experience';
 
 export interface Language {
   code: 'en' | 'fr' | 'ar';
@@ -33,7 +34,13 @@ export class LanguageService {
     initialValue: null as unknown,
   });
   /** Null until the active language file has loaded. */
-  readonly c = computed(() => (typeof this.raw() === 'object' ? (this.raw() as Content) : null));
+  readonly c = computed<Content | null>(() => {
+    const raw = this.raw();
+    // Every {years} placeholder of the loaded language file becomes the computed years of experience.
+    return typeof raw === 'object' && raw
+      ? (JSON.parse(withYears(JSON.stringify(raw))) as Content)
+      : null;
+  });
 
   constructor() {
     this.use(this.current());
@@ -51,10 +58,11 @@ export class LanguageService {
       /* ignore */
     }
     this.translate.get(['meta.title', 'meta.description']).subscribe((t) => {
+      const description = withYears(t['meta.description']);
       this.title.setTitle(t['meta.title']);
-      this.meta.updateTag({ name: 'description', content: t['meta.description'] });
+      this.meta.updateTag({ name: 'description', content: description });
       this.meta.updateTag({ property: 'og:title', content: t['meta.title'] });
-      this.meta.updateTag({ property: 'og:description', content: t['meta.description'] });
+      this.meta.updateTag({ property: 'og:description', content: description });
       this.meta.updateTag({ property: 'og:locale', content: lang.code });
     });
   }

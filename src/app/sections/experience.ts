@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageService } from '../core/language.service';
 import { JOBS } from '../core/cv.data';
@@ -10,15 +10,29 @@ import { SectionHeading } from '../shared/section-heading';
   selector: 'app-experience',
   imports: [TranslatePipe, SectionHeading, Icon, Reveal],
   template: `
-    <section id="experience" class="section">
+    <section id="experience" class="section section--alt">
       <div class="container">
         <app-section-heading
           [kicker]="'content.experience.kicker' | translate"
           [title]="'content.experience.title' | translate"
+          [intro]="exp()?.intro ?? ''"
         />
 
+        <div class="evolution" appReveal>
+          <h3 class="evo-title">{{ 'content.experience.evolutionTitle' | translate }}</h3>
+          <ol class="track">
+            @for (e of exp()?.evolution; track e.period) {
+              <li>
+                <span class="period">{{ e.period }}</span>
+                <strong>{{ e.title }}</strong>
+                <span class="evo-text">{{ e.text }}</span>
+              </li>
+            }
+          </ol>
+        </div>
+
         <ol class="timeline">
-          @for (item of lang.c()?.experience?.items; track $index; let i = $index) {
+          @for (item of exp()?.items; track $index; let i = $index) {
             @let job = jobs[i];
             <li class="entry" appReveal>
               <span class="marker" aria-hidden="true"></span>
@@ -43,6 +57,7 @@ import { SectionHeading } from '../shared/section-heading';
                     </p>
                   </div>
                 </header>
+                <p class="summary">{{ item.summary }}</p>
 
                 <button
                   type="button"
@@ -83,6 +98,58 @@ import { SectionHeading } from '../shared/section-heading';
     </section>
   `,
   styles: `
+    .evolution {
+      margin-block-end: 2.5rem;
+    }
+    .evo-title {
+      margin: 0 0 1rem;
+      font: 600 0.8rem/1 var(--font-mono);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .track {
+      display: grid;
+      gap: 0.75rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .track li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--border);
+      border-block-start: 3px solid var(--accent);
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+    }
+    .period {
+      color: var(--accent);
+      font: 600 0.78rem/1 var(--font-mono);
+    }
+    .evo-text {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .summary {
+      margin: 1rem 0 0;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    @media (min-width: 48rem) {
+      .track {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 64rem) {
+      .track {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
     .timeline {
       position: relative;
       margin: 0;
@@ -229,10 +296,11 @@ import { SectionHeading } from '../shared/section-heading';
   `,
 })
 export class Experience {
-  protected readonly lang = inject(LanguageService);
+  private readonly lang = inject(LanguageService);
+  protected readonly exp = computed(() => this.lang.c()?.experience);
   protected readonly jobs = JOBS;
-  /** The current position is expanded by default. */
-  private readonly open = signal<Set<number>>(new Set([0]));
+  /** Every position starts expanded so the full career is visible (and readable by recruiters and ATS). */
+  private readonly open = signal<Set<number>>(new Set([0, 1, 2, 3]));
 
   protected isOpen(i: number): boolean {
     return this.open().has(i);
